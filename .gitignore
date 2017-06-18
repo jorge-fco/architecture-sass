@@ -3,15 +3,15 @@
 npm_modules
 bower_components
 
-# = PREPOS
+# = PREPROS
 # ----------------------------------------------------------------------
-prepos.config
-prepos-6.config
+prepros.config
+prepros-6.config
 
 # = PAGES
 # ----------------------------------------------------------------------
-index.html
-index.php
+*.html
+*.php
 
 # = FILES
 # ----------------------------------------------------------------------
