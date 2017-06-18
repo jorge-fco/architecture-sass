@@ -1,0 +1,77 @@
+/* =Colors
+-----------------------------------------------------------------------------*/
+$color-primary:			#000000;
+$color-secundary: 			#005BFE;
+
+$color-text:				#424242;
+$color-text-light:			#616161;
+$color-text-black:			#212121;
+
+$color-accent:				#F8F8F9;
+$color-divider:				#E0E0E0;
+
+$color-select-bg:	 		#FFE400;
+$color-select-text:		#000000;
+$color-placeholder:		#CCCCCC;
+
+
+/* =Fonts
+-----------------------------------------------------------------------------*/
+$title: 			'Poppins', sans-serif;
+$title-bold: 	'Poppins', sans-serif;
+$text: 			'Overpass Mono', monospace;
+$text-light: 	'Overpass Mono', monospace;
+$text-bold: 	'Overpass Mono', monospace;
+$text-serif: 	'Libre Baskerville', serif;
+
+.title{
+	font-family: $title-bold;
+	font-weight: 700;
+}
+
+.text{
+	font-family: $text;
+	font-weight: 400;
+}
+
+.text-light{
+	font-family: $text;
+	font-weight: 300;
+}
+
+.text-bold{
+	font-family: $text;
+	font-weight: 700;
+}
+
+.text-serif{
+	font-family: $text-serif;
+	font-weight: 300;
+}
+
+/* =Selection
+-----------------------------------------------------------------------------*/
+::-moz-selection {
+	color: $color-select-text;
+	background: $color-select-bg;
+}
+::selection {
+	color: $color-select-text;
+	background: $color-select-bg;
+}
+
+::-webkit-input-placeholder {
+	color: $color-placeholder;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+	color: $color-placeholder;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+	color: $color-placeholder;
+}
+
+:-ms-input-placeholder {
+	color: $color-placeholder;
+}

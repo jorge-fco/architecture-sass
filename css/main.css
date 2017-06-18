@@ -1,0 +1,159 @@
+@charset "UTF-8";
+/*
+	MAIN
+	Core — v.01
+	Year — 2017©
+	Jorge Fco.
+*/
+/*=Transitions
+----------------------------------------------------------------------*/
+/*=Center element
+----------------------------------------------------------------------*/
+/*=Vertical element
+----------------------------------------------------------------------*/
+/*=Horizontal element
+----------------------------------------------------------------------*/
+/* =Colors
+-----------------------------------------------------------------------------*/
+/* =Fonts
+-----------------------------------------------------------------------------*/
+.title, h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700; }
+
+.text, p, p em, p del, p strong, label, span, a, button, ul li, ol li, blockquote p {
+  font-family: "Overpass Mono", monospace;
+  font-weight: 400; }
+
+.text-light {
+  font-family: "Overpass Mono", monospace;
+  font-weight: 300; }
+
+.text-bold {
+  font-family: "Overpass Mono", monospace;
+  font-weight: 700; }
+
+.text-serif {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 300; }
+
+/* =Selection
+-----------------------------------------------------------------------------*/
+::-moz-selection {
+  color: #000000;
+  background: #FFE400; }
+
+::selection {
+  color: #000000;
+  background: #FFE400; }
+
+::-webkit-input-placeholder {
+  color: #CCCCCC; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #CCCCCC; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #CCCCCC; }
+
+:-ms-input-placeholder {
+  color: #CCCCCC; }
+
+/* =Titles
+-----------------------------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+  color: #424242; }
+
+/* =Text
+-----------------------------------------------------------------------------*/
+p {
+  color: #424242; }
+
+label {
+  color: #424242; }
+
+span {
+  color: #424242; }
+
+/* =Links
+-----------------------------------------------------------------------------*/
+a {
+  color: #424242;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+  a:active {
+    color: #005BFE;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+  a:visited {
+    color: #005BFE;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+  a:focus {
+    color: #005BFE;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+  a:hover {
+    color: #005BFE;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+
+/* =Buttons
+-----------------------------------------------------------------------------*/
+button:active {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+button:focus {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+button:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+/* =List
+-----------------------------------------------------------------------------*/
+ul li {
+  color: #424242; }
+
+ol li {
+  color: #424242; }
+
+/* =Quotes
+-----------------------------------------------------------------------------*/
+blockquote p {
+  color: #424242; }
+
+header {
+  width: 100%; }
+
+footer {
+  width: 100%; }

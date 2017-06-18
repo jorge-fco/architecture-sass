@@ -32,6 +32,7 @@ layout.scss
 _home.scss <br/>
 _about.scss <br/>
 _contact.scss <br/>
+_error.scss <br/>
 . <br/>
 . <br/>
 . <br/>
