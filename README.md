@@ -1,7 +1,7 @@
 # Architecture SASS
 📐 Achitecture and Logic SASS for my projects.
 
-## 📚 sass
+## 📚 SASS
 
 ### 📁base
 _fonts.scss <br/>
@@ -48,3 +48,4 @@ _owl.carousel.scss <br/>
 vendors.scss
 
 🔵main.scss
+

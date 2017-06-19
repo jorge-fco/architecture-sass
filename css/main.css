@@ -5,6 +5,8 @@
 	Year — 2017©
 	Jorge Fco.
 */
+/* =Size breakpoints
+-----------------------------------------------------------------------------*/
 /*=Transitions
 ----------------------------------------------------------------------*/
 /*=Center element
@@ -21,7 +23,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: 700; }
 
-.text, p, p em, p del, p strong, label, span, a, button, ul li, ol li, blockquote p {
+.text, p, p em, p del, p strong, label, span, mark, a, button, ul li, ol li, blockquote p {
   font-family: "Overpass Mono", monospace;
   font-weight: 400; }
 
