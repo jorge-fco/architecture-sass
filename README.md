@@ -39,7 +39,7 @@ _error.scss <br/>
 pages.scss
 
 ### 📁vendor
-_bootstrap.scss <br/>
+_framework.scss <br/>
 _animated.scss <br/>
 _owl.carousel.scss <br/>
 . <br/>
@@ -47,5 +47,5 @@ _owl.carousel.scss <br/>
 . <br/>
 vendors.scss
 
-🔵main.scss
+🔵 main.scss
 
