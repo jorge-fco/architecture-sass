@@ -1,0 +1,232 @@
+html {
+	font-family: sans-serif;
+	line-height: 1.15;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-ms-overflow-style: scrollbar;
+	-webkit-tap-highlight-color: transparent;
+}
+
+body{
+	margin: 0;
+	font-family: sans-serif;
+	line-height: 1.5;
+	background-color: #ffffff;
+}
+
+/* =Titles
+-----------------------------------------------------------------------------*/
+h1,h2,h3,h4,h5,h6{
+	@extend .title;
+	color: $color-text;
+}
+
+h1{
+	font-size: 56px;
+	@include media(full){
+		font-size: 58px;
+	}
+}
+
+h2{
+	font-size: 48px;
+	@include media(full){
+		font-size: 50px;
+	}
+}
+
+h3{
+	font-size: 40px;
+	@include media(full){
+		font-size: 42px;
+	}
+}
+
+h4{
+	font-size: 32px;
+	@include media(full){
+		font-size: 34px;
+	}
+}
+
+h5{
+	font-size: 24px;
+	@include media(full){
+		font-size: 26px;
+	}
+}
+
+h6{
+	font-size: 16px;
+	@include media(full){
+		font-size: 18px;
+	}
+}
+
+/* =Text
+-----------------------------------------------------------------------------*/
+hr{
+	background-color: $color-divider;
+}
+
+p, label, span, em, del, strong, cite, small, time, {
+	@extend .text;
+	color: $color-text;
+	font-size: $size-text-md;
+	@include media(small){
+		font-size: $size-text-sm;
+	}
+	@include media(full){
+		font-size: $size-text-lg;
+	}
+}
+
+p{
+
+}
+
+label{
+
+}
+
+span{
+
+}
+
+em{
+
+}
+
+del{
+
+}
+
+strong{
+
+}
+
+cite{
+
+}
+
+small{
+
+}
+
+time{
+
+}
+
+mark{
+	@extend .text;
+	color: $color-select-text;
+	background: $color-select-bg;
+}
+
+pre{
+	@extend .text;
+	padding: 15px 20px;
+	border: 1px solid $color-divider;
+	background-color: $color-accent;
+	code{
+		@extend .text;
+	}
+}
+
+/* =Address
+-----------------------------------------------------------------------------*/
+address{
+	@extend .text;
+	font-style: normal;
+}
+
+/* =Blockquote
+-----------------------------------------------------------------------------*/
+blockquote{
+	@extend .text;
+	color: $color-text-light;
+	font-style: normal;
+	background-color: $color-accent;
+}
+
+/* =Links
+-----------------------------------------------------------------------------*/
+a{
+	@extend .text;
+	color: $color-text;
+	text-decoration: none;
+	@include transition(0.3s);
+	&:active{
+		@include transition(0.3s);
+	}
+	&:visited{
+		@include transition(0.3s);
+	}
+	&:focus{
+		@include transition(0.3s);
+	}
+	&:hover{
+		@include transition(0.3s);
+	}
+}
+
+/* =Buttons
+-----------------------------------------------------------------------------*/
+button{
+	@extend .text;
+	@include transition(0.3s);
+	&:active{
+		@include transition(0.3s);
+	}
+	&:focus{
+		@include transition(0.3s);
+	}
+	&:hover{
+		@include transition(0.3s);
+	}
+}
+
+/* =List
+-----------------------------------------------------------------------------*/
+ul{
+	li{
+		@extend .text;
+		color: $color-text;
+	}
+}
+
+ol{
+	li{
+		@extend .text;
+		color: $color-text;
+	}
+}
+
+/* =Table
+-----------------------------------------------------------------------------*/
+table{
+	thead{
+		tr{
+			th{
+				@extend .title;
+				color: $color-text;
+			}
+		}
+	}
+	tbody{
+		tr{
+			td{
+				@extend .text;
+				color: $color-text;
+			}
+		}
+	}
+	tfoot{
+		tr{
+			th{
+				@extend .title;
+				color: $color-text;
+			}
+		}
+	}
+}

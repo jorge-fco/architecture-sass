@@ -1,12 +1,39 @@
-# = NPM
+# = MAC FILES
 # ----------------------------------------------------------------------
-bower_components
-node_modules
-
-# = FILES
-# ----------------------------------------------------------------------
+Icon
 .DS_Store
-.Trashes
+
+# = KIRBY FOLDERS
+# ----------------------------------------------------------------------
+/content/*
+/kirby/*
+/panel/*
+/site/*
+/assets/general.css
+
+# = IMAGES
+# ----------------------------------------------------------------------
+/thumbs/*
+!/thumbs/index.html
+
+/site/cache/*
+!/site/cache/index.html
+
+# = KIRBY ACCOUNTS
+# ----------------------------------------------------------------------
+/site/accounts/*
+!/site/accounts/index.html
+
+# = AVATARS
+# ----------------------------------------------------------------------
+/assets/avatars/*
+!/assets/avatars/index.html
+
+# = PREPOS FILES
+# ----------------------------------------------------------------------
+/prepros.cfg
+/prepros-6.config
+/prepros.cfg
 
 # = PAGES
 # ----------------------------------------------------------------------
@@ -14,11 +41,9 @@ node_modules
 *.log
 *.php
 *.html
-snippets
-snippets/*
+*.htaccess
 
-# = CONFIG
+# = NPM & BOWER
 # ----------------------------------------------------------------------
-prepros-6.config
-prepros.config
-prepros.cfg
+node_modules/*
+bower_components/*

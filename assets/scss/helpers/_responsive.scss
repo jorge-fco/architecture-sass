@@ -3,9 +3,8 @@
 $screen-xs	:			480px !default;
 $screen-small:			768px !default;
 $screen-medium:		992px !default;
-$screen-large: 		1200px !default;
+$screen-large: 			1200px !default;
 $screen-full: 			1824px !default;
-
 
 @mixin media($breakpoint...){
 
