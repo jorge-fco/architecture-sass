@@ -12,5 +12,8 @@
 	z-index: 20;
 }
 
-/* =Z-INDEX
+/* =ROW ALIGN
 -----------------------------------------------------------------------------*/
+.align-middle{
+	@include align-items(center);
+}

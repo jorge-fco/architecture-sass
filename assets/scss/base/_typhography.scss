@@ -1,6 +1,9 @@
-html {
+html, body{
+	color: $color-text;
 	font-family: sans-serif;
-	line-height: 1.15;
+	line-height: 1.5;
+}
+html {
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
 	-ms-overflow-style: scrollbar;
@@ -9,8 +12,6 @@ html {
 
 body{
 	margin: 0;
-	font-family: sans-serif;
-	line-height: 1.5;
 	background-color: #ffffff;
 }
 
@@ -22,56 +23,78 @@ h1,h2,h3,h4,h5,h6{
 }
 
 h1{
-	font-size: 56px;
+	font-size: $size-h1-md;
+	@include media(small){
+		font-size: $size-h1-sm;
+	}
 	@include media(full){
-		font-size: 58px;
+		font-size: $size-h1-lg;
 	}
 }
 
 h2{
-	font-size: 48px;
+	font-size: $size-h2-md;
+	@include media(small){
+		font-size: $size-h2-sm;
+	}
 	@include media(full){
-		font-size: 50px;
+		font-size: $size-h2-lg;
 	}
 }
 
 h3{
-	font-size: 40px;
+	font-size: $size-h3-md;
+	@include media(small){
+		font-size: $size-h3-sm;
+	}
 	@include media(full){
-		font-size: 42px;
+		font-size: $size-h3-lg;
 	}
 }
 
 h4{
-	font-size: 32px;
+	font-size: $size-h4-md;
+	@include media(small){
+		font-size: $size-h4-sm;
+	}
 	@include media(full){
-		font-size: 34px;
+		font-size: $size-h4-lg;
 	}
 }
 
 h5{
-	font-size: 24px;
+	font-size: $size-h5-md;
+	@include media(small){
+		font-size: $size-h5-sm;
+	}
 	@include media(full){
-		font-size: 26px;
+		font-size: $size-h5-lg;
 	}
 }
 
 h6{
-	font-size: 16px;
+	font-size: $size-h6-md;
+	@include media(small){
+		font-size: $size-h6-sm;
+	}
 	@include media(full){
-		font-size: 18px;
+		font-size: $size-h6-lg;
 	}
 }
 
 /* =Text
 -----------------------------------------------------------------------------*/
 hr{
+	width: 100%;
+	height: 1px;
+	border: 0;
+	display: block;
+	margin: 1.5rem 0;
 	background-color: $color-divider;
 }
 
-p, label, span, em, del, strong, cite, small, time, {
+p, label, span, em, del, strong, cite, small, time, data{
 	@extend .text;
-	color: $color-text;
 	font-size: $size-text-md;
 	@include media(small){
 		font-size: $size-text-sm;
@@ -82,55 +105,61 @@ p, label, span, em, del, strong, cite, small, time, {
 }
 
 p{
-
+	color: $color-text;
 }
 
 label{
-
+	color: $color-text;
 }
 
 span{
-
+	color: $color-text;
 }
 
 em{
-
+	color: $color-text;
 }
 
 del{
-
+	color: $color-text;
 }
 
 strong{
+	color: $color-text;
+}
 
+data{
+	color: $color-text-light;
 }
 
 cite{
-
+	color: $color-text-light;
 }
 
 small{
-
+	color: $color-text-light;
 }
 
 time{
-
+	color: $color-text-light;
 }
 
 mark{
 	@extend .text;
-	color: $color-select-text;
-	background: $color-select-bg;
+	color: #000000;
+	background: #ffe000;
 }
 
 pre{
 	@extend .text;
-	padding: 15px 20px;
+	line-height: 1.6;
 	border: 1px solid $color-divider;
 	background-color: $color-accent;
-	code{
-		@extend .text;
-	}
+	padding: 0.25em 0.5em 0.25em;
+}
+
+code{
+	@extend .text;
 }
 
 /* =Address
@@ -143,9 +172,11 @@ address{
 /* =Blockquote
 -----------------------------------------------------------------------------*/
 blockquote{
+	margin: 0;
 	@extend .text;
 	color: $color-text-light;
 	font-style: normal;
+	padding: 0.25em 0.5em 0.25em;
 	background-color: $color-accent;
 }
 
@@ -205,6 +236,8 @@ ol{
 /* =Table
 -----------------------------------------------------------------------------*/
 table{
+	width: 100%;
+	border: 1px solid $color-divider;
 	thead{
 		tr{
 			th{

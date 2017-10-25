@@ -9,7 +9,8 @@ Icon
 /kirby/*
 /panel/*
 /site/*
-/assets/general.css
+!/assets/main.css
+!/assets/main.min.css
 
 # = IMAGES
 # ----------------------------------------------------------------------
