@@ -3,12 +3,18 @@
 Icon
 .DS_Store
 
+# = ASSETS
+# ----------------------------------------------------------------------
+/assets/fonts/*
+/assets/favicons/*
+
 # = KIRBY FOLDERS
 # ----------------------------------------------------------------------
 /content/*
 /kirby/*
 /panel/*
 /site/*
+/assets/*
 !/assets/main.css
 !/assets/main.min.css
 

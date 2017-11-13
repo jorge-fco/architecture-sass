@@ -65,7 +65,7 @@
 
 /* =ROW ALIGN
 -----------------------------------------------------------------------------*/
-.align-middle {
+.align--middle {
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
@@ -155,7 +155,9 @@ body {
 /* =Titles
 -----------------------------------------------------------------------------*/
 h1, h2, h3, h4, h5, h6 {
-  color: #424242; }
+  color: #424242;
+  font-style: normal;
+  font-weight: normal; }
 
 h1 {
   font-size: 46px;
@@ -358,7 +360,9 @@ del {
   color: #424242; }
 
 strong {
-  color: #424242; }
+  color: #424242;
+  font-style: normal;
+  font-weight: normal; }
 
 data {
   color: #616161; }
@@ -395,6 +399,22 @@ blockquote {
   font-style: normal;
   padding: 0.25em 0.5em 0.25em;
   background-color: #f8f8f9; }
+
+/* =Svg
+-----------------------------------------------------------------------------*/
+svg {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: relative; }
+  svg:hover {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
 
 /* =Links
 -----------------------------------------------------------------------------*/
@@ -521,3 +541,6 @@ form {
     color: #424242;
     background-color: #ffffff;
     border: 1px solid #e0e0e0; }
+
+.button {
+  text-decoration: none; }
