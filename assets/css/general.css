@@ -1,83 +1,76 @@
+body{
+	color: #000000;
+	//background-color: #000000;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+}
+
+p{
+	font-family: 'Roboto Mono', monospace;
+	font-size: 16px;
+	font-weight: 300;
+	font-style: normal;
+}
+
 .header{
 	width: 100%;
 	position: relative;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	background-color: #ffffff;
-	border-bottom: 1px solid #e0e0e0;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.10);
+	padding-top: 80px;
+	padding-bottom: 80px;
 }
 
-.header__logo{
-	width: 100%;
+.header h1{
+	font-family: 'Fredoka One', cursive;
+	font-size: 48px;
 }
 
-.header__logo a{
-	font-family: 'Lato', sans-serif;
-	color: #ffffff;
-	font-size: 22px;
-	font-weight: 900;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 15px;
-	padding-right: 15px;
-	background-color: red;
+.header p{
+
 }
 
-.header__version{
-	width: 100%;
-	text-align: right;
-}
-
-.header__version p{
-	margin: 0;
-	color: #e0e0e0;
-	font-size: 12px;
-}
-
-.main{
-	width: 100%;
-	position: relative;
-	padding-top: 5%;
-	padding-bottom: 5%;
-}
-
-.main ul{
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-.main ul li{
-	position: relative;
-	margin-bottom: 10px;
-}
-
-.container{
-	width: 100%;
-	margin: 0 auto;
-	position: relative;
-	max-width: 1200px;
-	padding-left: 10%;
-	padding-right: 10%;
+.header svg{
+	width: 104px;
 }
 
 .footer{
 	width: 100%;
 	position: relative;
-	text-align: center;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	background-color: #000000;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-top: 1px solid #ffffff;
 }
 
 .footer p{
-	color: #e0e0e0;
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 12px;
 	margin: 0;
 }
 
+.footer ul{
+	margin: 0;
+	display: flex;
+	justify-content: flex-end;
+	list-style: none;
+}
+
+.footer ul li{
+	position: relative;
+}
+
+.footer ul li + li{
+	margin-left: 15px;
+}
+
+.footer ul li a{
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 12px;
+}
+
 .footer svg{
-	width: 16px;
-	height: 16px;
-	fill: red;
+	width: 12px;
+	height: 12px;
+	fill: rgba(255, 255, 255, 0.5);
 }

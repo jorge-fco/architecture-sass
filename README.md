@@ -1,5 +1,5 @@
 # Architecture SCSS
-📐 Achitecture and Logic SCSS for my projects.
+📐 Achitecture and Logic SCSS for projects.
 
 ## 📚 SCSS
 
@@ -10,18 +10,24 @@ _typhography.scss <br/>
 _variables.scss <br/>
 base.scss
 
+****
+
 ### 📁components
-_buttons.scss <br/>
 _forms.scss <br/>
+_buttons.scss <br/>
 _modals.scss <br/>
 _sliders.scss <br/>
-base.scss
+📁components.scss
+
+****
 
 ### 📁helpers
 _mixins.scss <br/>
 _modifiers.scss <br/>
 _responsive.scss <br/>
 helpers.scss
+
+****
 
 ### 📁layout
 _aside.scss <br/>
@@ -40,14 +46,18 @@ _home.scss <br/>
 . <br/>
 pages.scss
 
+****
+
 ### 📁vendor
-_framework.scss <br/>
 _animated.scss <br/>
 _carousel.scss <br/>
+_framework.scss <br/>
 . <br/>
 . <br/>
 . <br/>
 vendors.scss
+
+****
 
 🔵 main.scss
 

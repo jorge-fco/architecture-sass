@@ -3,6 +3,7 @@ html, body{
 	font-family: sans-serif;
 	line-height: 1.5;
 }
+
 html {
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
@@ -26,62 +27,26 @@ h1,h2,h3,h4,h5,h6{
 
 h1{
 	font-size: $size-h1-md;
-	@include media(small){
-		font-size: $size-h1-sm;
-	}
-	@include media(full){
-		font-size: $size-h1-lg;
-	}
 }
 
 h2{
 	font-size: $size-h2-md;
-	@include media(small){
-		font-size: $size-h2-sm;
-	}
-	@include media(full){
-		font-size: $size-h2-lg;
-	}
 }
 
 h3{
 	font-size: $size-h3-md;
-	@include media(small){
-		font-size: $size-h3-sm;
-	}
-	@include media(full){
-		font-size: $size-h3-lg;
-	}
 }
 
 h4{
 	font-size: $size-h4-md;
-	@include media(small){
-		font-size: $size-h4-sm;
-	}
-	@include media(full){
-		font-size: $size-h4-lg;
-	}
 }
 
 h5{
 	font-size: $size-h5-md;
-	@include media(small){
-		font-size: $size-h5-sm;
-	}
-	@include media(full){
-		font-size: $size-h5-lg;
-	}
 }
 
 h6{
 	font-size: $size-h6-md;
-	@include media(small){
-		font-size: $size-h6-sm;
-	}
-	@include media(full){
-		font-size: $size-h6-lg;
-	}
 }
 
 /* =Text
@@ -98,12 +63,6 @@ hr{
 p, label, span, em, del, strong, cite, small, time, data{
 	@extend .text;
 	font-size: $size-text-md;
-	@include media(small){
-		font-size: $size-text-sm;
-	}
-	@include media(full){
-		font-size: $size-text-lg;
-	}
 }
 
 p{
@@ -242,6 +201,17 @@ ul{
 
 ol{
 	li{
+		@extend .text;
+		color: $color-text;
+	}
+}
+
+dl{
+	dt{
+		@extend .text;
+		color: $color-text;
+	}
+	dd{
 		@extend .text;
 		color: $color-text;
 	}

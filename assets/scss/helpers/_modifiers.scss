@@ -11,9 +11,3 @@
 .after{
 	z-index: 20;
 }
-
-/* =ROW ALIGN
------------------------------------------------------------------------------*/
-.align--middle{
-	@include align-items(center);
-}
