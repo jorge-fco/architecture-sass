@@ -1,24 +1,30 @@
-html, body{
-	color: $color-text;
-	font-family: sans-serif;
-	line-height: 1.5;
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
 }
 
-html {
-	-webkit-text-size-adjust: 100%;
-	-ms-text-size-adjust: 100%;
-	-ms-overflow-style: scrollbar;
-	-webkit-tap-highlight-color: transparent;
+html{
+	box-sizing: border-box;
 }
 
-body{
+body {
 	margin: 0;
-	background-color: #ffffff;
+	@extend .text;
+	font-size: $size-text;
+	line-height: 1.5;
+	color: $color-text;
+	text-align: left;
+	background-color: #fff;
 }
 
 /* =Titles
 -----------------------------------------------------------------------------*/
-h1,h2,h3,h4,h5,h6{
+hgroup{
+
+}
+
+h1, h2, h3, h4, h5, h6{
 	@extend .title;
 	color: $color-text;
 	font-style: normal;
@@ -49,201 +55,35 @@ h6{
 	font-size: $size-h6-md;
 }
 
-/* =Text
+
+/* =Selection
 -----------------------------------------------------------------------------*/
-hr{
-	width: 100%;
-	height: 1px;
-	border: 0;
-	display: block;
-	margin: 1.5rem 0;
-	background-color: $color-divider;
+::-moz-selection {
+	color: $color-select-text;
+	background: $color-select-bg;
+}
+::selection {
+	color: $color-select-text;
+	background: $color-select-bg;
 }
 
-p, label, span, em, del, strong, cite, small, time, data{
-	@extend .text;
-	font-size: $size-text-md;
-}
 
-p{
-	color: $color-text;
-}
-
-label{
-	color: $color-text;
-}
-
-span{
-	color: $color-text;
-}
-
-em{
-	color: $color-text;
-}
-
-del{
-	color: $color-text;
-}
-
-strong{
-	color: $color-text;
-	font-style: normal;
-	font-weight: normal;
-}
-
-data{
-	color: $color-text-light;
-}
-
-cite{
-	color: $color-text-light;
-}
-
-small{
-	color: $color-text-light;
-}
-
-time{
-	color: $color-text-light;
-}
-
-mark{
-	@extend .text;
-	color: #000000;
-	background: #ffe000;
-}
-
-pre{
-	@extend .text;
-	line-height: 1.6;
-	border: 1px solid $color-divider;
-	background-color: $color-accent;
-	padding: 0.25em 0.5em 0.25em;
-}
-
-code{
-	@extend .text;
-}
-
-/* =Address
+/* =Placeholder
 -----------------------------------------------------------------------------*/
-address{
-	@extend .text;
-	font-style: normal;
+::-webkit-input-placeholder {
+	color: #ccc;
 }
 
-/* =Blockquote
------------------------------------------------------------------------------*/
-blockquote{
-	margin: 0;
-	@extend .text;
-	color: $color-text-light;
-	font-style: normal;
-	padding: 0.25em 0.5em 0.25em;
-	background-color: $color-accent;
+:-moz-placeholder {
+	color: #ccc;
+	opacity: 1;
 }
 
-/* =Svg
------------------------------------------------------------------------------*/
-svg{
-	@include transition(0.3s);
-	position: relative;
-	&:hover{
-		@include transition(0.3s);
-	}
+::-moz-placeholder {
+	color: #ccc;
+	opacity:  1;
 }
 
-/* =Links
------------------------------------------------------------------------------*/
-a{
-	@extend .text;
-	color: $color-text;
-	text-decoration: none;
-	@include transition(0.3s);
-	&:active{
-		@include transition(0.3s);
-	}
-	&:visited{
-		@include transition(0.3s);
-	}
-	&:focus{
-		@include transition(0.3s);
-	}
-	&:hover{
-		@include transition(0.3s);
-	}
-}
-
-/* =Buttons
------------------------------------------------------------------------------*/
-button{
-	@extend .text;
-	@include transition(0.3s);
-	&:active{
-		@include transition(0.3s);
-	}
-	&:focus{
-		@include transition(0.3s);
-	}
-	&:hover{
-		@include transition(0.3s);
-	}
-}
-
-/* =List
------------------------------------------------------------------------------*/
-ul{
-	li{
-		@extend .text;
-		color: $color-text;
-	}
-}
-
-ol{
-	li{
-		@extend .text;
-		color: $color-text;
-	}
-}
-
-dl{
-	dt{
-		@extend .text;
-		color: $color-text;
-	}
-	dd{
-		@extend .text;
-		color: $color-text;
-	}
-}
-
-/* =Table
------------------------------------------------------------------------------*/
-table{
-	width: 100%;
-	border: 1px solid $color-divider;
-	thead{
-		tr{
-			th{
-				@extend .title;
-				color: $color-text;
-			}
-		}
-	}
-	tbody{
-		tr{
-			td{
-				@extend .text;
-				color: $color-text;
-			}
-		}
-	}
-	tfoot{
-		tr{
-			th{
-				@extend .title;
-				color: $color-text;
-			}
-		}
-	}
+:-ms-input-placeholder {
+	color: #ccc;
 }

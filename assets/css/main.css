@@ -8,6 +8,15 @@
 	www.jorge-frac.com
 */
 /*=
+	Bootstrap
+	Kube
+	Bulma
+	Pure
+	.
+	.
+	.
+*/
+/*=
 	Animated
 */
 .animated {
@@ -23,15 +32,6 @@
 /*=
 	Carousel
 	Flickity
-	.
-	.
-	.
-*/
-/*=
-	Bootstrap
-	Kube
-	Bulma
-	Pure
 	.
 	.
 	.
@@ -82,10 +82,10 @@
 -----------------------------------------------------------------------------*/
 /* =Fonts
 -----------------------------------------------------------------------------*/
-.title, h1, h2, h3, h4, h5, h6, table thead tr th, table tfoot tr th {
+.title, h1, h2, h3, h4, h5, h6 {
   font-family: "Lato", sans-serif; }
 
-.text, p, label, span, em, del, strong, cite, small, time, data, mark, pre, code, address, blockquote, a, button, ul li, ol li, dl dt, dl dd, table tbody tr td, form input[type="text"],
+.text, body, form input[type="text"],
 form input[type="email"],
 form input[type="tel"],
 form input[type="number"],
@@ -105,44 +105,23 @@ form input[type="time"], form textarea, form input[type="submit"] {
 .text-serif {
   font-family: "Open Sans", sans-serif; }
 
-/* =Selection
------------------------------------------------------------------------------*/
-::-moz-selection {
-  color: #000000;
-  background: #ead4ff; }
-
-::selection {
-  color: #000000;
-  background: #ead4ff; }
-
-/* =Placeholder
------------------------------------------------------------------------------*/
-::-webkit-input-placeholder {
-  color: #cccccc; }
-
-:-moz-placeholder {
-  color: #cccccc; }
-
-::-moz-placeholder {
-  color: #cccccc; }
-
-:-ms-input-placeholder {
-  color: #cccccc; }
-
-html, body {
-  color: #424242;
-  font-family: sans-serif;
-  line-height: 1.5; }
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
 
 html {
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  -ms-overflow-style: scrollbar;
-  -webkit-tap-highlight-color: transparent; }
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
 
 body {
   margin: 0;
-  background-color: #ffffff; }
+  font-size: 16px;
+  line-height: 1.5;
+  color: #424242;
+  text-align: left;
+  background-color: #fff; }
 
 /* =Titles
 -----------------------------------------------------------------------------*/
@@ -169,184 +148,37 @@ h5 {
 h6 {
   font-size: 16px; }
 
-/* =Text
+/* =Selection
 -----------------------------------------------------------------------------*/
-hr {
-  width: 100%;
-  height: 1px;
-  border: 0;
-  display: block;
-  margin: 1.5rem 0;
-  background-color: #e0e0e0; }
-
-p, label, span, em, del, strong, cite, small, time, data {
-  font-size: 14px; }
-
-p {
-  color: #424242; }
-
-label {
-  color: #424242; }
-
-span {
-  color: #424242; }
-
-em {
-  color: #424242; }
-
-del {
-  color: #424242; }
-
-strong {
-  color: #424242;
-  font-style: normal;
-  font-weight: normal; }
-
-data {
-  color: #616161; }
-
-cite {
-  color: #616161; }
-
-small {
-  color: #616161; }
-
-time {
-  color: #616161; }
-
-mark {
+::-moz-selection {
   color: #000000;
-  background: #ffe000; }
+  background: #ead4ff; }
 
-pre {
-  line-height: 1.6;
-  border: 1px solid #e0e0e0;
-  background-color: #f8f8f9;
-  padding: 0.25em 0.5em 0.25em; }
+::selection {
+  color: #000000;
+  background: #ead4ff; }
 
-/* =Address
+/* =Placeholder
 -----------------------------------------------------------------------------*/
-address {
-  font-style: normal; }
+::-webkit-input-placeholder {
+  color: #ccc; }
 
-/* =Blockquote
------------------------------------------------------------------------------*/
-blockquote {
-  margin: 0;
-  color: #616161;
-  font-style: normal;
-  padding: 0.25em 0.5em 0.25em;
-  background-color: #f8f8f9; }
+:-moz-placeholder {
+  color: #ccc;
+  opacity: 1; }
 
-/* =Svg
------------------------------------------------------------------------------*/
-svg {
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  position: relative; }
-  svg:hover {
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out; }
+::-moz-placeholder {
+  color: #ccc;
+  opacity: 1; }
 
-/* =Links
------------------------------------------------------------------------------*/
-a {
-  color: #424242;
-  text-decoration: none;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; }
-  a:active {
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out; }
-  a:visited {
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out; }
-  a:focus {
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out; }
-  a:hover {
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out; }
+:-ms-input-placeholder {
+  color: #ccc; }
 
-/* =Buttons
------------------------------------------------------------------------------*/
-button {
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; }
-  button:active {
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out; }
-  button:focus {
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out; }
-  button:hover {
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out; }
-
-/* =List
------------------------------------------------------------------------------*/
-ul li {
-  color: #424242; }
-
-ol li {
-  color: #424242; }
-
-dl dt {
-  color: #424242; }
-
-dl dd {
-  color: #424242; }
-
-/* =Table
------------------------------------------------------------------------------*/
-table {
-  width: 100%;
-  border: 1px solid #e0e0e0; }
-  table thead tr th {
-    color: #424242; }
-  table tbody tr td {
-    color: #424242; }
-  table tfoot tr th {
-    color: #424242; }
-
-footer {
+.footer {
   width: 100%;
   position: relative; }
 
-header {
+.header {
   width: 100%;
   position: relative; }
 

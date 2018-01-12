@@ -17,9 +17,7 @@ $color-placeholder:		#cccccc;
 
 /* =Size
 -----------------------------------------------------------------------------*/
-$size-text-sm:		12px;
-$size-text-md:		14px;
-$size-text-lg:		16px;
+$size-text:			16px;
 
 $size-h1-sm:		44px;
 $size-h1-md:		46px;
@@ -72,33 +70,4 @@ $text-serif: 	'Open Sans', sans-serif;
 
 .text-serif{
 	font-family: $text-serif;
-}
-
-/* =Selection
------------------------------------------------------------------------------*/
-::-moz-selection {
-	color: $color-select-text;
-	background: $color-select-bg;
-}
-::selection {
-	color: $color-select-text;
-	background: $color-select-bg;
-}
-
-/* =Placeholder
------------------------------------------------------------------------------*/
-::-webkit-input-placeholder {
-	color: $color-placeholder;
-}
-
-:-moz-placeholder {
-	color: $color-placeholder;
-}
-
-::-moz-placeholder {
-	color: $color-placeholder;
-}
-
-:-ms-input-placeholder {
-	color: $color-placeholder;
 }
