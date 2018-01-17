@@ -10,8 +10,8 @@ html{
 
 body {
 	margin: 0;
-	@extend .text;
-	font-size: $size-text;
+	@include text;
+	font-size: 16px;
 	line-height: 1.5;
 	color: $color-text;
 	text-align: left;
@@ -25,36 +25,39 @@ hgroup{
 }
 
 h1, h2, h3, h4, h5, h6{
-	@extend .title;
+	@include title-bold;
 	color: $color-text;
-	font-style: normal;
-	font-weight: normal;
 }
 
 h1{
-	font-size: $size-h1-md;
+
 }
 
 h2{
-	font-size: $size-h2-md;
+
 }
 
 h3{
-	font-size: $size-h3-md;
+
 }
 
 h4{
-	font-size: $size-h4-md;
+
 }
 
 h5{
-	font-size: $size-h5-md;
+
 }
 
 h6{
-	font-size: $size-h6-md;
+
 }
 
+/* =Code
+-----------------------------------------------------------------------------*/
+pre, code{
+	@include text-mono;
+}
 
 /* =Selection
 -----------------------------------------------------------------------------*/
@@ -71,19 +74,19 @@ h6{
 /* =Placeholder
 -----------------------------------------------------------------------------*/
 ::-webkit-input-placeholder {
-	color: #ccc;
+	color: $color-placeholder;
 }
 
 :-moz-placeholder {
-	color: #ccc;
+	color: $color-placeholder;
 	opacity: 1;
 }
 
 ::-moz-placeholder {
-	color: #ccc;
+	color: $color-placeholder;
 	opacity:  1;
 }
 
 :-ms-input-placeholder {
-	color: #ccc;
+	color: $color-placeholder;
 }

@@ -14,60 +14,42 @@ $color-select-bg:	 		#ead4ff;
 $color-select-text:			#000000;
 $color-placeholder:		#cccccc;
 
-
-/* =Size
------------------------------------------------------------------------------*/
-$size-text:			16px;
-
-$size-h1-sm:		44px;
-$size-h1-md:		46px;
-$size-h1-lg:			48px;
-
-$size-h2-sm:		38px;
-$size-h2-md:		40px;
-$size-h2-lg:			42px;
-
-$size-h3-sm:		32px;
-$size-h3-md:		34px;
-$size-h3-lg:			36px;
-
-$size-h4-sm:		26px;
-$size-h4-md:		28px;
-$size-h4-lg:			30px;
-
-$size-h5-sm:		20px;
-$size-h5-md:		22px;
-$size-h5-lg:			24px;
-
-$size-h6-sm:		14px;
-$size-h6-md:		16px;
-$size-h6-lg:			18px;
-
 /* =Fonts
 -----------------------------------------------------------------------------*/
 $title: 			'Lato', sans-serif;
 $title-bold: 	'Lato', sans-serif;
+
 $text: 			'Open Sans', sans-serif;
 $text-light: 	'Open Sans', sans-serif;
 $text-bold: 	'Open Sans', sans-serif;
-$text-serif: 	'Open Sans', sans-serif;
 
-.title{
-	font-family: $title-bold;
+$text-serif: 	'Merriweather', serif;
+$text-mono:	'Roboto Mono', monospace;
+
+@mixin title{
+	@include font($title, normal, 700);
 }
 
-.text{
-	font-family: $text;
+@mixin title-bold{
+	@include font($title-bold, normal, 900);
 }
 
-.text-light{
-	font-family: $text-light;
+@mixin text{
+	@include font($text, normal, 400);
 }
 
-.text-bold{
-	font-family: $text-bold;
+@mixin text-light{
+	@include font($text-light, normal, 300);
 }
 
-.text-serif{
-	font-family: $text-serif;
+@mixin text-bold{
+	@include font($text-bold, normal, 700);
+}
+
+@mixin text-serif{
+	@include font($text-serif, normal, 400);
+}
+
+@mixin text-mono{
+	@include font($text-mono, normal, 400);
 }

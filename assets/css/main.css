@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /*
 	MAIN
-	Core — v.02
-	Year — 2017©
+	Core — v.03
+	Year — 2018©
 	✄ Not view code or copy ✄
 	❤ CSS Core Design ❤
 	www.jorge-frac.com
@@ -17,51 +17,13 @@
 	.
 */
 /*=
-	Animated
-*/
-.animated {
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both; }
-
-.infinite {
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite; }
-
-/*=
 	Carousel
 	Flickity
 	.
 	.
 	.
 */
-/*=Transitions
-----------------------------------------------------------------------*/
-/*=Center element
-----------------------------------------------------------------------*/
-/*=Vertical element
-----------------------------------------------------------------------*/
-/*=Horizontal element
-----------------------------------------------------------------------*/
-/*=Aligns row elements
-----------------------------------------------------------------------*/
-/*=Orientation items
-----------------------------------------------------------------------*/
-/*=Calculate
-----------------------------------------------------------------------*/
 /* =Z-INDEX
------------------------------------------------------------------------------*/
-.before {
-  z-index: 5; }
-
-.middle {
-  z-index: 15; }
-
-.after {
-  z-index: 20; }
-
-/* =Size breakpoints
 -----------------------------------------------------------------------------*/
 /*=
 	My fonts for app
@@ -78,33 +40,8 @@
 */
 /* =Colors
 -----------------------------------------------------------------------------*/
-/* =Size
------------------------------------------------------------------------------*/
 /* =Fonts
 -----------------------------------------------------------------------------*/
-.title, h1, h2, h3, h4, h5, h6 {
-  font-family: "Lato", sans-serif; }
-
-.text, body, form input[type="text"],
-form input[type="email"],
-form input[type="tel"],
-form input[type="number"],
-form input[type="url"],
-form input[type="search"],
-form input[type="password"],
-form input[type="date"],
-form input[type="time"], form textarea, form input[type="submit"] {
-  font-family: "Open Sans", sans-serif; }
-
-.text-light {
-  font-family: "Open Sans", sans-serif; }
-
-.text-bold {
-  font-family: "Open Sans", sans-serif; }
-
-.text-serif {
-  font-family: "Open Sans", sans-serif; }
-
 *,
 *::before,
 *::after {
@@ -117,6 +54,9 @@ html {
 
 body {
   margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   color: #424242;
@@ -126,27 +66,17 @@ body {
 /* =Titles
 -----------------------------------------------------------------------------*/
 h1, h2, h3, h4, h5, h6 {
-  color: #424242;
+  font-family: "Lato", sans-serif;
   font-style: normal;
-  font-weight: normal; }
+  font-weight: 900;
+  color: #424242; }
 
-h1 {
-  font-size: 46px; }
-
-h2 {
-  font-size: 40px; }
-
-h3 {
-  font-size: 34px; }
-
-h4 {
-  font-size: 28px; }
-
-h5 {
-  font-size: 22px; }
-
-h6 {
-  font-size: 16px; }
+/* =Code
+-----------------------------------------------------------------------------*/
+pre, code {
+  font-family: "Roboto Mono", monospace;
+  font-style: normal;
+  font-weight: 400; }
 
 /* =Selection
 -----------------------------------------------------------------------------*/
@@ -161,18 +91,18 @@ h6 {
 /* =Placeholder
 -----------------------------------------------------------------------------*/
 ::-webkit-input-placeholder {
-  color: #ccc; }
+  color: #cccccc; }
 
 :-moz-placeholder {
-  color: #ccc;
+  color: #cccccc;
   opacity: 1; }
 
 ::-moz-placeholder {
-  color: #ccc;
+  color: #cccccc;
   opacity: 1; }
 
 :-ms-input-placeholder {
-  color: #ccc; }
+  color: #cccccc; }
 
 .footer {
   width: 100%;
@@ -196,6 +126,8 @@ h6 {
 
 .button {
   text-decoration: none; }
+  .button:hover {
+    text-decoration: none; }
 
 form {
   margin: 0; }
@@ -211,12 +143,22 @@ form {
   form input[type="password"],
   form input[type="date"],
   form input[type="time"] {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
     color: #424242;
     padding: 0.375rem 0.75rem;
     border-radius: .25em;
     background-color: #ffffff;
     border: 1px solid #e0e0e0; }
   form textarea {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
     color: #424242;
     background-color: #ffffff;
     border: 1px solid #e0e0e0; }
+  form input[type="submit"] {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400; }

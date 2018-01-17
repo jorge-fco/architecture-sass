@@ -1,13 +1,13 @@
 /* =Z-INDEX
 -----------------------------------------------------------------------------*/
-.before{
+@mixin before{
 	z-index: 5;
 }
 
-.middle{
+@mixin middle{
 	z-index: 15;
 }
 
-.after{
+@mixin after{
 	z-index: 20;
 }
