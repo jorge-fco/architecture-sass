@@ -1,0 +1,157 @@
+@charset "UTF-8";
+body {
+  color: #212121;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 35px; }
+
+h1 {
+  font-size: 54px; }
+
+h2 {
+  font-size: 42px; }
+
+h3 {
+  font-size: 36px; }
+
+h4 {
+  font-size: 28px; }
+
+h5 {
+  font-size: 22px; }
+
+h6 {
+  font-size: 18px; }
+
+a {
+  text-decoration: none;
+  border-bottom: 1px solid #212121; }
+  a:hover {
+    text-decoration: none; }
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400; }
+
+em {
+  font-family: "Roboto Mono", monospace;
+  font-style: normal;
+  font-weight: 400; }
+
+blockquote {
+  width: 100%;
+  display: block;
+  margin: 48px auto 48px auto;
+  background-color: #fafafb;
+  padding: 25px 60px;
+  position: relative; }
+  blockquote:before {
+    content: ' “ ';
+    color: #fcf3af;
+    font-family: "Merriweather", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    font-weight: 900;
+    margin: 0;
+    top: 0;
+    left: 10px;
+    position: absolute; }
+  blockquote p {
+    color: #757575;
+    font-family: "Barlow Condensed", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 0; }
+
+pre, code {
+  font-family: "Roboto Mono", monospace;
+  font-style: normal;
+  font-weight: 400;
+  display: block;
+  background-color: #fafafb;
+  margin: 0 auto;
+  position: relative;
+  padding: 10px 15px; }
+
+.header {
+  width: 100%;
+  position: relative; }
+  .header h1 {
+    font-size: 84px; }
+  .header p {
+    font-size: 18px; }
+
+.logo {
+  padding-top: 9.25926vh;
+  padding-bottom: 9.25926vh; }
+
+.logo-style, .logo__top, .logo__left, .logo__right, .logo__bottom {
+  width: 64px;
+  height: 64px;
+  margin: 0;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 8px;
+  border-color: #212121;
+  background-color: #ffffff;
+  position: relative; }
+
+.logo__top {
+  display: block;
+  margin-bottom: 7px; }
+
+.logo__left {
+  display: inline-block; }
+
+.logo__right {
+  display: inline-block;
+  margin-left: 3px; }
+
+.logo__bottom {
+  display: block;
+  margin-top: 1px; }
+
+.header__date {
+  width: 100%;
+  position: relative;
+  text-align: left; }
+  .header__date time {
+    color: #757575;
+    font-size: 14px; }
+
+.header__version {
+  width: 100%;
+  position: relative;
+  text-align: right; }
+  .header__version small {
+    color: #757575;
+    font-size: 14px; }
+
+.main {
+  width: 100%;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  .main h2 i {
+    margin-right: 8px; }
+    .main h2 i.yellow {
+      color: #efce4a; }
+
+.footer {
+  width: 100%;
+  background-color: #212121;
+  text-align: center;
+  position: relative; }
+  .footer small {
+    color: #ffffff;
+    font-size: 14px; }

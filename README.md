@@ -2,7 +2,7 @@
 
 📐 Architecture and Logic SCSS for projects.
 
-[Documentation](https://nopal-horse-studio.github.io/architecture-sass/)
+📌 [View Documentation](https://nopal-horse-studio.github.io/architecture-sass/)
 
 ## 📚 SCSS
 
@@ -15,14 +15,20 @@ base.scss
 
 
 ### 📁 Components
-_forms.scss <br/>
 _buttons.scss <br/>
+_forms.scss <br/>
 _modals.scss <br/>
 _sliders.scss <br/>
 components.scss
 
 
 ### 📁 Helpers
+🗂 mixins
+	_align.scss
+	_calculate.scss
+	_fonts.scss
+	_row.scss
+	_transition.scss
 _mixins.scss <br/>
 _modifiers.scss <br/>
 _responsive.scss <br/>
@@ -47,9 +53,9 @@ pages.scss
 
 
 ### 📁 Vendor
-_animated.scss <br/>
-_carousel.scss <br/>
 _framework.scss <br/>
+_carousel.scss <br/>
+_animated.scss <br/>
 . <br/>
 . <br/>
 . <br/>
@@ -60,6 +66,7 @@ main.scss
 
 Archivo core en donde se realizan los @imports.
 ```scss
+
 /*
 	MAIN
 	Core — v.03
@@ -75,6 +82,7 @@ Archivo core en donde se realizan los @imports.
 @import "layout/layout";
 @import "components/components";
 @import "pages/pages";
+
 ```
 
 

@@ -1,0 +1,86 @@
+body{
+	color: $color-text;
+	@include text;
+	font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6{
+	@include title;
+	margin-bottom: 35px;
+}
+
+h1{
+	font-size: 54px;
+}
+
+h2{
+	font-size: 42px;
+}
+
+h3{
+	font-size: 36px;
+}
+
+h4{
+	font-size: 28px;
+}
+
+h5{
+	font-size: 22px;
+}
+
+h6{
+	font-size: 18px;
+}
+
+a{
+	text-decoration: none;
+	border-bottom: 1px solid $color-text;
+	&:hover{
+		text-decoration: none;
+	}
+}
+
+p{
+	@include text;
+}
+
+em{
+	@include text-mono;
+}
+
+blockquote{
+	width: 100%;
+	display: block;
+	margin: 48px auto 48px auto;
+	//background-color: #fefbe7;
+	background-color: $color-accent;
+	padding: 25px 60px;
+	position: relative;
+	&:before{
+		content: ' “ ';
+		color: #fcf3af;
+		@include text-serif;
+		font-size: 64px;
+		font-weight: 900;
+		margin: 0;
+		top: 0;
+		left: 10px;
+		position: absolute;
+	}
+	p{
+		color: $color-text-light;
+		@include title;
+		font-size: 22px;
+		margin-bottom: 0;
+	}
+}
+
+pre, code{
+	@include text-mono;
+	display: block;
+	background-color: $color-accent;
+	margin: 0 auto;
+	position: relative;
+	padding: 10px 15px;
+}

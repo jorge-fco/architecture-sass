@@ -14,6 +14,7 @@ Icon
 /panel/*
 /site/*
 /assets/*
+!/assets/docs/
 !/assets/fonts/
 !/assets/main.css
 !/assets/main.min.css

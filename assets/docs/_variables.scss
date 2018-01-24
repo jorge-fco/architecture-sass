@@ -1,0 +1,35 @@
+$color-primary: 		#30dca6;
+$color-primary-light:	#c0f4e4;
+$color-primary-dark:	#00B281;
+
+$color-text:			#212121;
+$color-text-light:		#757575;
+$color-text-black:		#111111;
+
+$color-accent:			#fafafb;
+$color-divider:			#e6e7e8;
+
+$title:			'Barlow Condensed', sans-serif;
+$text: 			'Roboto', sans-serif;
+$text-mono:	'Roboto Mono', monospace;
+$text-serif:		'Merriweather', serif;
+
+@mixin title {
+	@include font($title, normal, 700);
+}
+
+@mixin text {
+	@include font($text, normal, 400);
+}
+
+@mixin text-bold {
+	@include font($text, normal, 700);
+}
+
+@mixin text-mono {
+	@include font($text-mono, normal, 400);
+}
+
+@mixin text-serif {
+	@include font($text-serif, normal, 400);
+}
