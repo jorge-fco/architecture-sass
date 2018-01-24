@@ -24,11 +24,11 @@ components.scss
 
 ### 📁 Helpers
 🗂 mixins
-	_align.scss
-	_calculate.scss
-	_fonts.scss
-	_row.scss
-	_transition.scss
+	_align.scss<br/>
+	_calculate.scss<br/>
+	_fonts.scss<br/>
+	_row.scss<br/>
+	_transition.scss<br/>
 _mixins.scss <br/>
 _modifiers.scss <br/>
 _responsive.scss <br/>
