@@ -19,11 +19,12 @@ _buttons.scss <br/>
 _forms.scss <br/>
 _modals.scss <br/>
 _sliders.scss <br/>
+_video.scss <br/>
 components.scss
 
 
 ### 📁 Helpers
-🗂 mixins
+🗂 mixins<br/>
 	_align.scss<br/>
 	_calculate.scss<br/>
 	_fonts.scss<br/>
