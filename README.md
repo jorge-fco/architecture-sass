@@ -25,11 +25,12 @@ components.scss
 
 ### 📁 Helpers
 🗂 mixins<br/>
-	_align.scss<br/>
-	_calculate.scss<br/>
-	_fonts.scss<br/>
-	_row.scss<br/>
-	_transition.scss<br/>
+* _align.scss
+* _calculate.scss
+* _fonts.scss
+* _row.scss
+* _transition.scss
+
 _mixins.scss <br/>
 _modifiers.scss <br/>
 _responsive.scss <br/>
@@ -43,17 +44,19 @@ _loader.scss <br/>
 layout.scss
 
 ### 📁 Pages
-_about.scss <br/>
-_contact.scss <br/>
-_error.scss <br/>
-_home.scss <br/>
-. <br/>
-. <br/>
-. <br/>
+```css
+_about.scss
+_contact.scss
+_error.scss
+_home.scss
+.
+.
+.
 pages.scss
-
+```
 
 ### 📁 Vendor
+```css
 _framework.scss <br/>
 _carousel.scss <br/>
 _animated.scss <br/>
@@ -61,9 +64,11 @@ _animated.scss <br/>
 . <br/>
 . <br/>
 vendors.scss
-
+```
 ### 🔵 Core
+```
 main.scss
+```
 
 Archivo core en donde se realizan los @imports.
 ```scss
