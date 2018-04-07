@@ -7,41 +7,50 @@
 ## 📚 SCSS
 
 ### 📁 Base
-_fonts.scss <br/>
-_icons.scss<br/>
-_typhography.scss <br/>
-_variables.scss <br/>
+```css
+_fonts.scss
+_icons.scs
+_typhography.scss
+_variables.scss
 base.scss
-
+```
 
 ### 📁 Components
-_buttons.scss <br/>
-_forms.scss <br/>
-_modals.scss <br/>
-_sliders.scss <br/>
-_video.scss <br/>
+```css
+_buttons.scss
+_forms.scss
+_modals.scss
+_sliders.scss
+_video.scss
 components.scss
-
+```
 
 ### 📁 Helpers
-🗂 mixins<br/>
-* _align.scss
-* _calculate.scss
-* _fonts.scss
-* _row.scss
-* _transition.scss
+```css
+🗂 mixin
+└── _align.scss
+└── _calculate.scss
+└── _fonts.scss
+└── _row.scss
+└── _transition.scss
 
-_mixins.scss <br/>
-_modifiers.scss <br/>
-_responsive.scss <br/>
+_mixins.scss
+_modifiers.scss
+_responsive.scss
 helpers.scss
+```
 
 ### 📁Layout
-_aside.scss <br/>
-_footer.scss <br/>
-_header.scss <br/>
-_loader.scss <br/>
+```css
+_aside.scss
+_footer.scss
+_header.scss
+_loader.scss
+.
+.
+.
 layout.scss
+```
 
 ### 📁 Pages
 ```css
@@ -57,21 +66,21 @@ pages.scss
 
 ### 📁 Vendor
 ```css
-_framework.scss <br/>
-_carousel.scss <br/>
-_animated.scss <br/>
-. <br/>
-. <br/>
-. <br/>
+_framework.scss
+_carousel.scss
+_animated.scss
+.
+.
+.
 vendors.scss
 ```
 ### 🔵 Core
-```
+```css
 main.scss
 ```
 
 Archivo core en donde se realizan los @imports.
-```scss
+```css
 
 /*
 	MAIN
