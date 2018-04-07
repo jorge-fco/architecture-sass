@@ -34,6 +34,7 @@ h6{
 }
 
 a{
+	color: $color-text;
 	text-decoration: none;
 	border-bottom: 1px solid $color-text;
 	&:hover{
@@ -53,13 +54,13 @@ blockquote{
 	width: 100%;
 	display: block;
 	margin: 48px auto 48px auto;
-	//background-color: #fefbe7;
+	background-color: #fefbe7;
 	background-color: $color-accent;
 	padding: 25px 60px;
 	position: relative;
 	&:before{
 		content: ' “ ';
-		color: #fcf3af;
+		color: $color-text-light;
 		@include text-serif;
 		font-size: 64px;
 		font-weight: 900;
@@ -76,11 +77,15 @@ blockquote{
 	}
 }
 
-pre, code{
+pre{
 	@include text-mono;
 	display: block;
 	background-color: $color-accent;
-	margin: 0 auto;
+	margin: 15px auto 35px auto;
 	position: relative;
-	padding: 10px 15px;
+	padding: 20px;
+}
+
+code{
+
 }

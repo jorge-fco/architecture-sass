@@ -2,11 +2,11 @@ $color-primary: 		#30dca6;
 $color-primary-light:	#c0f4e4;
 $color-primary-dark:	#00B281;
 
-$color-text:			#212121;
-$color-text-light:		#757575;
-$color-text-black:		#111111;
+$color-text:			rgba(0, 0, 0, 0.84);
+$color-text-light:		rgba(0, 0, 0, 0.54);
+$color-text-black:		#000000;
 
-$color-accent:			#fafafb;
+$color-accent:			rgba(0, 0, 0, 0.05);
 $color-divider:			#e6e7e8;
 
 $title:			'Barlow Condensed', sans-serif;
