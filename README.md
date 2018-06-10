@@ -8,11 +8,13 @@
 
 ### 📁 Base
 ```css
-_fonts.scss
-_icons.scs
-_typhography.scss
-_variables.scss
-├── base.scss
+
+ _fonts.scss
+ _icons.scs
+ _typhography.scss
+ _variables.scss
+├──base.scss
+
 ```
 
 ### 📁 Components
