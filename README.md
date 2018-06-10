@@ -13,7 +13,7 @@
  _icons.scs
  _typhography.scss
  _variables.scss
-├──base.scss
+ [ ]base.scss
 
 ```
 
