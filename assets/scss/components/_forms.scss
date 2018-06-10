@@ -19,14 +19,14 @@ form{
 		color: $color-text;
 		padding: 0.375rem 0.75rem;
 		border-radius: .25em;
-		background-color: #ffffff;
+		background-color: white;
 		border: 1px solid $color-divider;
 	}
 
 	textarea{
 		@include text;
 		color: $color-text;
-		background-color: #ffffff;
+		background-color: white;
 		border: 1px solid $color-divider;
 	}
 

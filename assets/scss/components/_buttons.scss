@@ -1,6 +1,22 @@
+/*
+	Default style for button
+*/
 .button{
 	text-decoration: none;
 	&:hover{
 		text-decoration: none;
+	}
+}
+
+
+.button-primary{
+	&:hover{
+
+	}
+}
+
+.button-secundary{
+	&:hover{
+
 	}
 }
