@@ -12,7 +12,7 @@ _fonts.scss
 _icons.scs
 _typhography.scss
 _variables.scss
-base.scss
+ ├── base.scss
 ```
 
 ### 📁 Components
