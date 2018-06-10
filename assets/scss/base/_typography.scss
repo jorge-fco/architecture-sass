@@ -15,7 +15,7 @@ body {
 	line-height: 1.5;
 	color: $color-text;
 	text-align: left;
-	background-color: #fff;
+	background-color: white;
 }
 
 /* =Titles
@@ -26,7 +26,6 @@ hgroup{
 
 h1, h2, h3, h4, h5, h6{
 	@include title-bold;
-	color: $color-text;
 }
 
 h1{
@@ -56,19 +55,42 @@ h6{
 /* =Text
 -----------------------------------------------------------------------------*/
 a{
+	&:hover{
+
+	}
+}
+
+em{
 
 }
 
+i{
+
+}
+
+
 p{
 
+}
+
+strong{
+	@include text-bold;
 }
 
 span{
 
 }
 
+svg{
+
+}
+
 /* =Code
 -----------------------------------------------------------------------------*/
+var{
+
+}
+
 pre, code{
 	@include text-mono;
 }

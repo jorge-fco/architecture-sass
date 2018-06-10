@@ -6,7 +6,7 @@
 	transform: translateX(-50%) translateY(-50%);
 }
 
-@mixin vertical-align{
+@mixin vertical-align(){
 	-moz-transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 	-o-transform: translateY(-50%);

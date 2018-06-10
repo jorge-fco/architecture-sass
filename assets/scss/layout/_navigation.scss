@@ -1,0 +1,14 @@
+.navigation{
+	ul{
+		li{
+			+ li{
+				margin-left: 15px;
+			}
+			a{
+				&:hover{
+
+				}
+			}
+		}
+	}
+}

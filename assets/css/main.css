@@ -31,10 +31,9 @@
 -----------------------------------------------------------------------------*/
 /* =Size viewport height
 -----------------------------------------------------------------------------*/
-/* =Z-INDEX
------------------------------------------------------------------------------*/
 /*=
-	My fonts for app or website
+	My fonts for App or Website
+	https://developer.mozilla.org/es/docs/Web/CSS/@font-face
 	.
 	.
 	.
@@ -47,8 +46,10 @@
 	}
 */
 /*=
-	FontAwesome
-	Ionicons
+	* FontAwesome
+	* Ionicons
+	* Material Icons
+	* Typicons
 	.
 	.
 	.
@@ -76,18 +77,22 @@ body {
   line-height: 1.5;
   color: #424242;
   text-align: left;
-  background-color: #fff; }
+  background-color: white; }
 
 /* =Titles
 -----------------------------------------------------------------------------*/
 h1, h2, h3, h4, h5, h6 {
   font-family: "Lato", sans-serif;
   font-style: normal;
-  font-weight: 900;
-  color: #424242; }
+  font-weight: 900; }
 
 /* =Text
 -----------------------------------------------------------------------------*/
+strong {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700; }
+
 /* =Code
 -----------------------------------------------------------------------------*/
 pre, code {
@@ -137,9 +142,12 @@ pre, code {
   right: 0;
   bottom: 0;
   overflow: hidden;
-  background-color: #ffffff;
+  background-color: white;
   position: fixed;
   z-index: 100; }
+
+.navigation ul li + li {
+  margin-left: 15px; }
 
 .button {
   text-decoration: none; }
