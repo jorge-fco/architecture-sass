@@ -53,3 +53,8 @@ $text-mono:	'Roboto Mono', monospace;
 @mixin text-mono{
 	@include font-face($text-mono, normal, 400);
 }
+
+/* =Buttons
+-----------------------------------------------------------------------------*/
+$button-padding: 10px 10px;
+$button-radius: 4px;

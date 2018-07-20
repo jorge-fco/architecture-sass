@@ -33,4 +33,8 @@ form{
 	input[type="submit"]{
 		@include text;
 	}
+
+	input[type="reset"]{
+		@include text;
+	}
 }
