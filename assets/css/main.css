@@ -173,6 +173,10 @@ pre, code {
   position: fixed;
   z-index: 100; }
 
+/*
+	Menu active in
+	version mobile
+*/
 .navigation ul li + li {
   margin-left: 15px; }
 
