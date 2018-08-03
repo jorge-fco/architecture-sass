@@ -1,4 +1,4 @@
-@mixin autoAlpha {
+@mixin autoAlpha() {
 	opacity: 0;
 	visibility: hidden;
 }

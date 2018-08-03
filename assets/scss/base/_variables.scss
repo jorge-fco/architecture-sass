@@ -7,12 +7,19 @@ $color-text:					#424242;
 $color-text-light:			#616161;
 $color-text-black:			#212121;
 
+$color-elements:			#dddddd;
 $color-accent:				#f8f8f9;
 $color-divider:				#e0e0e0;
 
+$color-body:				#ffffff;
 $color-select-bg:	 		#ead4ff;
 $color-select-text:			#000000;
 $color-placeholder:		#cccccc;
+
+/* =Typography
+-----------------------------------------------------------------------------*/
+$font-size-body:	16px;
+$line-height: 		1.5;
 
 /* =Fonts
 -----------------------------------------------------------------------------*/
@@ -56,5 +63,5 @@ $text-mono:	'Roboto Mono', monospace;
 
 /* =Buttons
 -----------------------------------------------------------------------------*/
-$button-padding: 10px 10px;
-$button-radius: 4px;
+$button-radius: 0.25em;
+$button-padding: .5em 1.35em !default;

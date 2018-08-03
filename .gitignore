@@ -24,7 +24,6 @@ Icon
 # ----------------------------------------------------------------------
 thumbs/*
 /thumbs/*
-!/thumbs/index.html
 
 /site/cache/*
 !/site/cache/index.html
@@ -52,7 +51,7 @@ thumbs/*
 *.php
 *.html
 *.htaccess
-!index.html
+index.html
 
 # = NPM & BOWER
 # ----------------------------------------------------------------------

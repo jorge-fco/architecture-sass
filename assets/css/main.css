@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*
+/*!
 	MAIN
 	Core — v.03
 	Year — 2018©
@@ -68,6 +68,8 @@
 */
 /* =Colors
 -----------------------------------------------------------------------------*/
+/* =Typography
+-----------------------------------------------------------------------------*/
 /* =Fonts
 -----------------------------------------------------------------------------*/
 /* =Buttons
@@ -104,7 +106,7 @@ body {
   line-height: 1.5;
   color: #424242;
   text-align: left;
-  background-color: white; }
+  background-color: #ffffff; }
 
 /* =Titles
 -----------------------------------------------------------------------------*/
@@ -184,7 +186,9 @@ pre, code {
 	Default style for button
 */
 .button {
-  text-decoration: none; }
+  border-radius: 0.25em;
+  text-decoration: none;
+  padding: 0.5em 1.35em; }
   .button:hover {
     text-decoration: none; }
 

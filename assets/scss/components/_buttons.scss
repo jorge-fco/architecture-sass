@@ -2,7 +2,9 @@
 	Default style for button
 */
 .button{
+	border-radius: $button-radius;
 	text-decoration: none;
+	padding: $button-padding;
 	&:hover{
 		text-decoration: none;
 	}

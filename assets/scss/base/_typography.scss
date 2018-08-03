@@ -11,11 +11,11 @@ html{
 body {
 	margin: 0;
 	@include text;
-	font-size: 16px;
-	line-height: 1.5;
+	font-size: $font-size-body;
+	line-height: $line-height;
 	color: $color-text;
 	text-align: left;
-	background-color: white;
+	background-color: $color-body;
 }
 
 /* =Titles
@@ -71,7 +71,6 @@ em{
 i{
 
 }
-
 
 p{
 
