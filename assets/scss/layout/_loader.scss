@@ -9,4 +9,5 @@
 	background-color: white;
 	position: fixed;
 	z-index: 100;
+	@include autoAlpha(true);
 }

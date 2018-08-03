@@ -7,6 +7,9 @@ $color-text:					#424242;
 $color-text-light:			#616161;
 $color-text-black:			#212121;
 
+$color-link:					#000;
+$color-link-hover:			#000;
+
 $color-elements:			#dddddd;
 $color-accent:				#f8f8f9;
 $color-divider:				#e0e0e0;
@@ -61,7 +64,18 @@ $text-mono:	'Roboto Mono', monospace;
 	@include font-face($text-mono, normal, 400);
 }
 
+/* =Inputs
+-----------------------------------------------------------------------------*/
+
 /* =Buttons
 -----------------------------------------------------------------------------*/
 $button-radius: 0.25em;
 $button-padding: .5em 1.35em !default;
+
+/* =Breakpoints
+-----------------------------------------------------------------------------*/
+$screen-xs:				576px  !default;	// -> Extra small (Phone)
+$screen-sm:				768px  !default;	// -> Small  (Smartphone)
+$screen-md:			1024px !default;	// -> Medium (Laptop and tablets)
+$screen-lg:				1440px !default;	// -> Large (Desktops PC)
+$screen-full:			1600px !default;	// -> Full (Device full HD)

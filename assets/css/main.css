@@ -1,11 +1,10 @@
 @charset "UTF-8";
 /*!
-	MAIN
-	Core — v.03
-	Year — 2018©
-	✄ Not view code or copy ✄
+	M A I N
+	Core — v.04
 	❤ CSS Core Design ❤
-	www.jorge-frac.com
+	✄ Not view code or copy ✄
+	2018© | www.jorge-frac.com
 */
 /*=
 	Bootstrap
@@ -35,14 +34,6 @@
 	BreakPoints
 	@MediaQueries
 */
-/* =Small
------------------------------------------------------------------------------*/
-/* =Medium
------------------------------------------------------------------------------*/
-/* =Large
------------------------------------------------------------------------------*/
-/* =Full HD
------------------------------------------------------------------------------*/
 /*=
 	My fonts for App or Website
 	https://developer.mozilla.org/es/docs/Web/CSS/@font-face
@@ -72,7 +63,11 @@
 -----------------------------------------------------------------------------*/
 /* =Fonts
 -----------------------------------------------------------------------------*/
+/* =Inputs
+-----------------------------------------------------------------------------*/
 /* =Buttons
+-----------------------------------------------------------------------------*/
+/* =Breakpoints
 -----------------------------------------------------------------------------*/
 :root {
   --color-primary:		#000;
@@ -117,6 +112,12 @@ h1, h2, h3, h4, h5, h6 {
 
 /* =Text
 -----------------------------------------------------------------------------*/
+address {
+  font-style: normal; }
+
+blockquote {
+  font-style: normal; }
+
 strong {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
@@ -173,7 +174,9 @@ pre, code {
   overflow: hidden;
   background-color: white;
   position: fixed;
-  z-index: 100; }
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden; }
 
 /*
 	Menu active in
