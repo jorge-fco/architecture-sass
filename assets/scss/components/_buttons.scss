@@ -2,6 +2,8 @@
 	Default style for button
 */
 .button{
+	@include title;
+	border: 1px solid transparent;
 	border-radius: $button-radius;
 	text-decoration: none;
 	padding: $button-padding;
@@ -12,8 +14,11 @@
 
 
 .button-primary{
+	color: white;
+	background-color: $color-primary;
 	&:hover{
-
+		color: white;
+		background-color: $color-secundary;
 	}
 }
 

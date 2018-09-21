@@ -1,76 +1,48 @@
 /* =Colors
 -----------------------------------------------------------------------------*/
-$color-primary:				#a7ffeb;
-$color-secundary: 			#005bfe;
+$color-primary:				var(--color-primary) !default;
+$color-secundary: 			var(--color-secundary) !default;
 
-$color-text:					#424242;
-$color-text-light:			#616161;
-$color-text-black:			#212121;
+$color-text:					var(--color-text) !default;
+$color-text-light:			var(--color-text-light) !default;
+$color-text-black:			var(--color-text-black) !default;
 
-$color-link:					#000;
-$color-link-hover:			#000;
+$color-link:					var(--color-link) !default;
+$color-link-hover:			var(--color-link-hover) !default;
 
-$color-elements:			#dddddd;
-$color-accent:				#f8f8f9;
-$color-divider:				#e0e0e0;
+$color-elements:			var(--color-elements) !default;
+$color-accent:				var(--color-accent) !default;
+$color-divider:				var(--color-divider) !default;
 
-$color-body:				#ffffff;
-$color-select-bg:	 		#ead4ff;
-$color-select-text:			#000000;
-$color-placeholder:		#cccccc;
+$color-body:				var(--color-body) !default;
+$color-selection-bg:	 	var(--color-selection-bg) !default;
+$color-selection-text:	var(--color-selection-text) !default;
+$color-placeholder:		var(--color-placeholder) !default;
 
 /* =Typography
 -----------------------------------------------------------------------------*/
-$font-size-body:	16px;
-$line-height: 		1.5;
+$body-line-heigh:	var(--body-line-heigh);
+$body-size-text: 	var(--body-size-text);
 
 /* =Fonts
 -----------------------------------------------------------------------------*/
-$title: 			'Lato', sans-serif;
-$title-bold: 		'Lato', sans-serif;
+$title: 			var(--title);
+$title-bold: 		var(--title-bold);
 
-$text: 			'Open Sans', sans-serif;
-$text-light: 		'Open Sans', sans-serif;
-$text-bold: 		'Open Sans', sans-serif;
+$text: 			var(--text);
+$text-light: 		var(--text-light);
+$text-bold: 		var(--text-bold);
 
-$text-serif: 		'Merriweather', serif;
-$text-mono:	'Roboto Mono', monospace;
-
-@mixin title{
-	@include font-face($title, normal, 700);
-}
-
-@mixin title-bold{
-	@include font-face($title-bold, normal, 900);
-}
-
-@mixin text{
-	@include font-face($text, normal, 400);
-}
-
-@mixin text-light{
-	@include font-face($text-light, normal, 300);
-}
-
-@mixin text-bold{
-	@include font-face($text-bold, normal, 700);
-}
-
-@mixin text-serif{
-	@include font-face($text-serif, normal, 400);
-}
-
-@mixin text-mono{
-	@include font-face($text-mono, normal, 400);
-}
+$text-serif: 		var(--text-serif);
+$text-mono:	var(--text-mono);
 
 /* =Inputs
 -----------------------------------------------------------------------------*/
 
 /* =Buttons
 -----------------------------------------------------------------------------*/
-$button-radius: 0.25em;
-$button-padding: .5em 1.35em !default;
+$button-radius: 	0.25rem !default;
+$button-padding:	0.5rem 1.35rem !default;
 
 /* =Breakpoints
 -----------------------------------------------------------------------------*/
