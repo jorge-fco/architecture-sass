@@ -1,0 +1,378 @@
+@charset "UTF-8";
+/*!
+
+	M A I N | Core — v.04
+	❤ CSS Core Design ❤
+	✄ Not view code or copy ✄
+	2018© | www.jorge-frac.com
+
+*/
+/*=
+	Bootstrap
+	Kube
+	Bulma
+	Pure
+	.
+	.
+	.
+*/
+/*=
+	Animate CSS
+	.
+	.
+	.
+*/
+/*=
+	Carousel
+	Flickity
+	.
+	.
+	.
+*/
+.background-gradient {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#a18cd1), to(#fbc2eb));
+  background-image: -webkit-linear-gradient(bottom, #a18cd1 0%, #fbc2eb 100%);
+  background-image: -o-linear-gradient(bottom, #a18cd1 0%, #fbc2eb 100%);
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%); }
+
+.background-linear {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), color-stop(50%, rgba(0, 0, 0, 0.9)), to(#000));
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9) 50%, #000);
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9) 50%, #000);
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9) 50%, #000); }
+
+/* =Calculate formula
+-----------------------------------------------------------------------------*/
+/* =Porcentaje
+-----------------------------------------------------------------------------*/
+/* =Size viewport width
+-----------------------------------------------------------------------------*/
+/* =Size viewport height
+-----------------------------------------------------------------------------*/
+.box-shadow-small {
+  -webkit-box-shadow: 5px 5px 5px 0 rgba(46, 61, 73, 0.2);
+  box-shadow: 5px 5px 5px 0 rgba(46, 61, 73, 0.2); }
+
+.box-shadow-medium {
+  -webkit-box-shadow: 5px 5px 15px 0 rgba(46, 61, 73, 0.2);
+  box-shadow: 5px 5px 15px 0 rgba(46, 61, 73, 0.2); }
+
+.box-shadow-large {
+  -webkit-box-shadow: 5px 5px 25px 0 rgba(46, 61, 73, 0.2);
+  box-shadow: 5px 5px 25px 0 rgba(46, 61, 73, 0.2); }
+
+.text-transform {
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl; }
+
+/*
+	BreakPoints
+	@MediaQueries
+*/
+/*=
+	My fonts for App or Website
+	https://developer.mozilla.org/es/docs/Web/CSS/@font-face
+	.
+	.
+	.
+	Example:
+	@font-face {
+		font-family: <un-nombre-de-fuente-remota>;
+		src: <origen> [,<origen>]*;
+		[font-weight: <peso>];
+		[font-style: <estilo>];
+	}
+*/
+/*=
+	* FontAwesome
+	* Ionicons
+	* Material Icons
+	* Typicons
+	.
+	.
+	.
+*/
+/* =Colors
+-----------------------------------------------------------------------------*/
+/* =Typography
+-----------------------------------------------------------------------------*/
+/* =Fonts
+-----------------------------------------------------------------------------*/
+/* =Inputs
+-----------------------------------------------------------------------------*/
+/* =Buttons
+-----------------------------------------------------------------------------*/
+/* =Breakpoints
+-----------------------------------------------------------------------------*/
+:root {
+  --color-primary:		#512DA8;
+  --color-secundary:		#00BCD4;
+  --color-text:				#212121;
+  --color-text-light:		#757575;
+  --color-text-black:		#000000;
+  --color-body:			#fff;
+  --body-line-height:		1.5;
+  --body-size-text:		1rem;
+  --title: 			'Lato', sans-serif;
+  --title-bold: 		'Lato', sans-serif;
+  --text: 			'Open Sans', sans-serif;
+  --text-light: 		'Open Sans', sans-serif;
+  --text-bold: 		'Open Sans', sans-serif;
+  --text-serif: 		'Merriweather', serif;
+  --text-mono:	'Roboto Mono', monospace;
+  --color-link: 				#512DA8;
+  --color-link-hover: 		#00BCD4;
+  --color-accent:			#D1C4E9;
+  --color-divider:			#BDBDBD;
+  --color-elements:		#222;
+  --color-placeholder:			#757575;
+  --color-selection-bg:			#ead4ff;
+  --color-selection-text:		#000000; }
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--text);
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--body-size-text);
+  line-height: var(--body-line-heigh);
+  color: var(--color-text);
+  text-align: left;
+  background-color: var(--color-body); }
+
+/* =Titles
+-----------------------------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--title-bold);
+  font-style: normal;
+  font-weight: 900; }
+
+hr {
+  border-color: var(--color-divider); }
+
+/* =Text
+-----------------------------------------------------------------------------*/
+a {
+  color: var(--color-link);
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+  a:hover {
+    color: var(--color-link-hover);
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+
+address {
+  font-style: normal; }
+
+blockquote {
+  font-style: normal; }
+
+strong {
+  font-family: var(--text-bold);
+  font-style: normal;
+  font-weight: 700; }
+
+/* =Code
+-----------------------------------------------------------------------------*/
+pre, code {
+  font-family: var(--text-mono);
+  font-style: normal;
+  font-weight: 400; }
+
+/* =Selection
+-----------------------------------------------------------------------------*/
+::-moz-selection {
+  color: var(--color-selection-text);
+  background: var(--color-selection-bg); }
+
+::selection {
+  color: var(--color-selection-text);
+  background: var(--color-selection-bg); }
+
+/* =Placeholder
+-----------------------------------------------------------------------------*/
+::-webkit-input-placeholder {
+  color: var(--color-placeholder); }
+
+:-moz-placeholder {
+  color: var(--color-placeholder);
+  opacity: 1; }
+
+::-moz-placeholder {
+  color: var(--color-placeholder);
+  opacity: 1; }
+
+:-ms-input-placeholder {
+  color: var(--color-placeholder); }
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  position: relative; }
+
+.footer {
+  width: 100%;
+  position: relative; }
+
+.header {
+  width: 100%;
+  position: relative; }
+
+.loader {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  background-color: white;
+  position: fixed;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden; }
+
+/*
+	Menu active in
+	version mobile
+*/
+.header__navigation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+  .header__navigation ul li + li {
+    margin-left: 15px; }
+  .header__navigation ul li a {
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+    .header__navigation ul li a:hover {
+      text-decoration: none;
+      -webkit-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
+
+.page {
+  padding-top: 5%;
+  padding-bottom: 5%; }
+
+.page__header {
+  width: 100%;
+  position: relative; }
+
+.page__cover {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--color-accent); }
+
+/*
+	Default style for button
+*/
+.button {
+  font-family: var(--title);
+  font-style: normal;
+  font-weight: 700;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  padding: 0.5rem 1.35rem; }
+  .button:hover {
+    text-decoration: none; }
+
+.button-primary {
+  color: white;
+  background-color: var(--color-primary); }
+  .button-primary:hover {
+    color: white;
+    background-color: var(--color-secundary); }
+
+form {
+  margin: 0; }
+  form label {
+    display: block;
+    padding-bottom: 5px; }
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="tel"],
+  form input[type="number"],
+  form input[type="url"],
+  form input[type="search"],
+  form input[type="password"],
+  form input[type="date"],
+  form input[type="time"] {
+    font-family: var(--text);
+    font-style: normal;
+    font-weight: 400;
+    color: var(--color-text);
+    width: 100%;
+    padding: 0.85rem 0.75rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    border: 1px solid var(--color-divider); }
+  form textarea {
+    font-family: var(--text);
+    font-style: normal;
+    font-weight: 400;
+    color: var(--color-text);
+    width: 100%;
+    padding: 0.85rem 0.75rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    border: 1px solid var(--color-divider); }
+  form input[type="submit"],
+  form input[type="reset"] {
+    font-family: var(--text);
+    font-style: normal;
+    font-weight: 400;
+    height: auto; }
+
+.slider {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  overflow: hidden; }
+
+.filter {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 15; }
+
+.cover {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 5; }
+  .cover img {
+    width: 100%; }
