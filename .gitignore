@@ -17,8 +17,8 @@ Icon
 !/assets/scss/
 !/assets/docs/
 !/assets/fonts/
-!/assets/css/app.css
-!/assets/css/app.min.css
+!/assets/css/*
+
 
 # = IMAGES
 # ----------------------------------------------------------------------

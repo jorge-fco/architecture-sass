@@ -13,9 +13,3 @@
 .text-transform{
 	writing-mode: vertical-rl;
 }
-
-@mixin flex-content(){
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-}
