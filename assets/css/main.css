@@ -248,19 +248,28 @@ pre, code {
 	Menu active in
 	version mobile
 */
-.header__navigation ul li + li {
-  margin-left: 15px; }
-
-.header__navigation ul li a {
-  text-decoration: none;
-  -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; }
-  .header__navigation ul li a:hover {
+.header__navigation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+  .header__navigation ul li + li {
+    margin-left: 15px; }
+  .header__navigation ul li a {
     text-decoration: none;
     -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out; }
+    .header__navigation ul li a:hover {
+      text-decoration: none;
+      -webkit-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
 
 .page {
   padding-top: 5%;

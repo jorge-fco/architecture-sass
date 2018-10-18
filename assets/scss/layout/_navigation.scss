@@ -1,5 +1,6 @@
 .header__navigation{
 	ul{
+		@include flex-content();
 		li{
 			+ li{
 				margin-left: 15px;
