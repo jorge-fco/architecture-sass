@@ -1,12 +1,15 @@
-.navigation{
+.header__navigation{
 	ul{
 		li{
 			+ li{
 				margin-left: 15px;
 			}
 			a{
+				text-decoration: none;
+				@include transition(0.3s);
 				&:hover{
-
+					text-decoration: none;
+					@include transition(0.3s);
 				}
 			}
 		}
