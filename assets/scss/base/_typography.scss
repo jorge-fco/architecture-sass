@@ -80,12 +80,18 @@ h6{
 
 }
 
+hr{
+	border-color: $color-divider;
+}
+
 /* =Text
 -----------------------------------------------------------------------------*/
 a{
 	color: $color-link;
+	@include transition(0.3s);
 	&:hover{
 		color: $color-link-hover;
+		@include transition(0.3s);
 	}
 }
 

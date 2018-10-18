@@ -17,8 +17,9 @@ form{
 	input[type="time"]{
 		@include text;
 		color: $color-text;
-		padding: 0.375rem 0.75rem;
-		border-radius: .25em;
+		width: 100%;
+		padding: $input-padding;
+		border-radius: $input-border-radius;
 		background-color: white;
 		border: 1px solid $color-divider;
 	}
@@ -26,15 +27,16 @@ form{
 	textarea{
 		@include text;
 		color: $color-text;
+		width: 100%;
+		padding: $input-padding;
+		border-radius: $input-border-radius;
 		background-color: white;
 		border: 1px solid $color-divider;
 	}
 
-	input[type="submit"]{
-		@include text;
-	}
-
+	input[type="submit"],
 	input[type="reset"]{
 		@include text;
+		height: auto;
 	}
 }

@@ -1,0 +1,23 @@
+.box-shadow-small{
+	box-shadow: 5px 5px 5px 0 rgba(46, 61, 73, .2);
+}
+
+.box-shadow-medium{
+	box-shadow: 5px 5px 15px 0 rgba(46, 61, 73, .2);
+}
+
+.box-shadow-large{
+	box-shadow: 5px 5px 25px 0 rgba(46, 61, 73, .2);
+}
+
+.background-gradient{
+	background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+
+.background-linear{
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0,0,0,0.9) 50%,#000);
+}
+
+.text-transform{
+	writing-mode: vertical-rl;
+}
