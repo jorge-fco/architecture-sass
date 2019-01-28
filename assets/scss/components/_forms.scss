@@ -18,8 +18,8 @@ form{
 		@include text;
 		color: $color-text;
 		width: 100%;
-		padding: $input-padding;
-		border-radius: $input-border-radius;
+		padding: $inputs-padding;
+		border-radius: $inputs-border-radius;
 		background-color: white;
 		border: 1px solid $color-divider;
 	}
@@ -28,8 +28,8 @@ form{
 		@include text;
 		color: $color-text;
 		width: 100%;
-		padding: $input-padding;
-		border-radius: $input-border-radius;
+		padding: $inputs-padding;
+		border-radius: $inputs-border-radius;
 		background-color: white;
 		border: 1px solid $color-divider;
 	}

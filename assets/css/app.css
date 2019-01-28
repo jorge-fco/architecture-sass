@@ -4,7 +4,7 @@
 	M A I N | Core — v.04
 	❤ CSS Core Design ❤
 	✄ Not view code or copy ✄
-	2018© | www.jorge-frac.com
+	2019 © | www.jorge-frac.com
 
 */
 /*=
@@ -49,6 +49,11 @@
 -----------------------------------------------------------------------------*/
 /* =Size viewport height
 -----------------------------------------------------------------------------*/
+/*
+	* https://github.com/stubbornella/oocss
+	* Convert font-size from px to rem with px fallback
+	* https://github.com/stubbornella/oocss/blob/master/oocss/src/components/utils/_fontSize.scss
+*/
 .box-shadow-small {
   -webkit-box-shadow: 5px 5px 5px 0 rgba(46, 61, 73, 0.2);
   box-shadow: 5px 5px 5px 0 rgba(46, 61, 73, 0.2); }
@@ -93,18 +98,6 @@
 	.
 	.
 */
-/* =Colors
------------------------------------------------------------------------------*/
-/* =Typography
------------------------------------------------------------------------------*/
-/* =Fonts
------------------------------------------------------------------------------*/
-/* =Inputs
------------------------------------------------------------------------------*/
-/* =Buttons
------------------------------------------------------------------------------*/
-/* =Breakpoints
------------------------------------------------------------------------------*/
 :root {
   --color-primary:		#512DA8;
   --color-secundary:		#00BCD4;
@@ -146,13 +139,11 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: var(--body-size-text);
-  line-height: var(--body-line-heigh);
+  line-height: var(--body-line-height);
   color: var(--color-text);
   text-align: left;
   background-color: var(--color-body); }
 
-/* =Titles
------------------------------------------------------------------------------*/
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--title-bold);
   font-style: normal;
@@ -161,8 +152,6 @@ h1, h2, h3, h4, h5, h6 {
 hr {
   border-color: var(--color-divider); }
 
-/* =Text
------------------------------------------------------------------------------*/
 a {
   color: var(--color-link);
   -webkit-transition: all 0.3s ease-in-out;
@@ -185,15 +174,11 @@ strong {
   font-style: normal;
   font-weight: 700; }
 
-/* =Code
------------------------------------------------------------------------------*/
 pre, code {
   font-family: var(--text-mono);
   font-style: normal;
   font-weight: 400; }
 
-/* =Selection
------------------------------------------------------------------------------*/
 ::-moz-selection {
   color: var(--color-selection-text);
   background: var(--color-selection-bg); }
@@ -202,8 +187,6 @@ pre, code {
   color: var(--color-selection-text);
   background: var(--color-selection-bg); }
 
-/* =Placeholder
------------------------------------------------------------------------------*/
 ::-webkit-input-placeholder {
   color: var(--color-placeholder); }
 
@@ -246,10 +229,15 @@ pre, code {
   opacity: 0;
   visibility: hidden; }
 
-/*
-	Menu active in
-	version mobile
-*/
+.loader__container {
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  position: absolute; }
+
 .header__navigation ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -288,9 +276,6 @@ pre, code {
   overflow: hidden;
   background-color: var(--color-accent); }
 
-/*
-	Default style for button
-*/
 .button {
   font-family: var(--title);
   font-style: normal;
@@ -348,40 +333,3 @@ form {
     font-style: normal;
     font-weight: 400;
     height: auto; }
-
-.slider {
-  width: 100%;
-  height: 50vh;
-  position: relative;
-  overflow: hidden; }
-
-.filter {
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  position: absolute;
-  z-index: 15; }
-
-.cover {
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  position: absolute;
-  z-index: 5; }
-  .cover:before {
-    content: '';
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    background-color: gray;
-    z-index: 15; }
-  .cover img {
-    width: 100%; }

@@ -1,5 +1,5 @@
-/* =Colors
------------------------------------------------------------------------------*/
+// =Colors
+//--------------------------------------------------------------------------------
 $color-primary:				var(--color-primary) !default;
 $color-secundary: 			var(--color-secundary) !default;
 
@@ -19,13 +19,13 @@ $color-selection-bg:	 	var(--color-selection-bg) !default;
 $color-selection-text:	var(--color-selection-text) !default;
 $color-placeholder:		var(--color-placeholder) !default;
 
-/* =Typography
------------------------------------------------------------------------------*/
-$body-line-heigh:	var(--body-line-heigh);
+// =Typography
+//--------------------------------------------------------------------------------
+$body-line-height:	var(--body-line-height);
 $body-size-text: 	var(--body-size-text);
 
-/* =Fonts
------------------------------------------------------------------------------*/
+// =Fonts
+//--------------------------------------------------------------------------------
 $title: 			var(--title);
 $title-bold: 		var(--title-bold);
 
@@ -36,20 +36,20 @@ $text-bold: 		var(--text-bold);
 $text-serif: 		var(--text-serif);
 $text-mono:	var(--text-mono);
 
-/* =Inputs
------------------------------------------------------------------------------*/
-$input-border-radius:		0.5rem;
-$input-padding:	0.85rem 0.75rem;
+// =Inputs
+//--------------------------------------------------------------------------------
+$inputs-border-radius:		0.5rem;
+$inputs-padding:	0.85rem 0.75rem;
 
-/* =Buttons
------------------------------------------------------------------------------*/
-$button-radius:	0.25rem !default;
-$button-padding:	0.5rem 1.35rem !default;
+// =Buttons
+//--------------------------------------------------------------------------------
+$buttons-radius:	0.25rem !default;
+$buttons-padding:	0.5rem 1.35rem !default;
 
-/* =Breakpoints
------------------------------------------------------------------------------*/
-$screen-xs:				576px  !default;	// -> Extra small (Phone)
-$screen-sm:				768px  !default;	// -> Small  (Smartphone)
-$screen-md:			1024px !default;	// -> Medium (Laptop and tablets)
-$screen-lg:				1440px !default;	// -> Large (Desktops PC)
-$screen-full:			1600px !default;	// -> Full (Device full HD)
+// =Breakpoints
+//--------------------------------------------------------------------------------
+$screen-xs:				576px  !default;
+$screen-sm:				768px  !default;
+$screen-md:			1024px !default;
+$screen-lg:				1440px !default;
+$screen-full:			1600px !default;

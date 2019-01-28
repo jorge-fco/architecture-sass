@@ -1,17 +1,13 @@
-/*
-	Default style for button
-*/
 .button{
 	@include title;
 	border: 1px solid transparent;
-	border-radius: $button-radius;
+	border-radius: $buttons-radius;
 	text-decoration: none;
-	padding: $button-padding;
+	padding: $buttons-padding;
 	&:hover{
 		text-decoration: none;
 	}
 }
-
 
 .button-primary{
 	color: white;
