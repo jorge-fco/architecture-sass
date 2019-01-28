@@ -93,8 +93,8 @@ Archivo core en donde se realizan los @imports.
 
 /*
 	MAIN
-	Core — v.03
-	Year — 2018©
+	Core — v.05
+	Year — 2019©
 	✄ Not view code or copy ✄
 	❤ CSS Core Design ❤
 	www.jorge-frac.com

@@ -52,6 +52,7 @@ thumbs/*
 *.html
 *.htaccess
 index.html
+readme.html
 
 # = NPM & BOWER
 # ----------------------------------------------------------------------
