@@ -2,7 +2,7 @@
 
 📐 Architecture and Logic SCSS for projects.
 
-📌 [View Documentation]()
+📌 [View Documentation](https://jorgefrac.github.io/architecture-sass/)
 
 ## 📚 SCSS
 
