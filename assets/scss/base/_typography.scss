@@ -1,9 +1,9 @@
 @mixin title{
-	@include font-face($title, normal, 700);
+	@include font-face($title, normal, 400);
 }
 
 @mixin title-bold{
-	@include font-face($title-bold, normal, 900);
+	@include font-face($title-bold, normal, 700);
 }
 
 @mixin text{

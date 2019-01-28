@@ -2,6 +2,7 @@ form{
 	margin: 0;
 
 	label{
+		@include text-bold;
 		display: block;
 		padding-bottom: 5px;
 	}
