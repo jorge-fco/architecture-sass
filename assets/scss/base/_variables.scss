@@ -38,12 +38,12 @@ $text-mono:	var(--text-mono);
 
 // =Inputs
 //--------------------------------------------------------------------------------
-$inputs-border-radius:		0.5rem;
-$inputs-padding:	0.85rem 0.75rem;
+$inputs-border-radius:	0.5rem !default;
+$inputs-padding:			0.85rem 0.75rem !default;
 
 // =Buttons
 //--------------------------------------------------------------------------------
-$buttons-radius:	0.25rem !default;
+$buttons-radius:		0.25rem !default;
 $buttons-padding:	0.5rem 1.35rem !default;
 
 // =Breakpoints
