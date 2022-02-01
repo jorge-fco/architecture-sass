@@ -92,12 +92,7 @@ Archivo core en donde se realizan los @imports.
 ```css
 
 /*
-	MAIN
-	Core — v.05
-	Year — 2019©
-	✄ Not view code or copy ✄
-	❤ CSS Core Design ❤
-	www.jorge-frac.com
+	
 */
 
 @import "vendors/vendors";

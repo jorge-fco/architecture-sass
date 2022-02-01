@@ -1,58 +1,16 @@
-# = MAC FILES
+# = FILES
 # ----------------------------------------------------------------------
 Icon
 .DS_Store
-
-# = ASSETS
-# ----------------------------------------------------------------------
-/assets/favicons/*
-
-# = KIRBY FOLDERS
-# ----------------------------------------------------------------------
-/content/*
-/kirby/*
-/panel/*
-/site/*
-/assets/*
-!/assets/scss/
-!/assets/docs/
-!/assets/fonts/
-!/assets/css/
-
-
-# = IMAGES
-# ----------------------------------------------------------------------
-thumbs/*
-/thumbs/*
-
-/site/cache/*
-!/site/cache/index.html
-
-# = KIRBY ACCOUNTS
-# ----------------------------------------------------------------------
-/site/accounts/*
-!/site/accounts/index.html
-
-# = AVATARS
-# ----------------------------------------------------------------------
-/assets/avatars/*
-!/assets/avatars/index.html
-
-# = PREPOS FILES
-# ----------------------------------------------------------------------
-/prepros.cfg
-/prepros-6.config
-/prepros.cfg
+ desktop.ini
+prepros.cfg
+prepros-6.config
+prepros.cfg
+prepros.config
 
 # = PAGES
 # ----------------------------------------------------------------------
-*.zip
-*.log
-*.php
-*.html
-*.htaccess
-index.html
-readme.html
+*.pug
 
 # = NPM & BOWER
 # ----------------------------------------------------------------------
