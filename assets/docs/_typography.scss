@@ -5,7 +5,7 @@ html{
 
 body{
 	color: var(--color-text);
-	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+	font-family: var(--font-text);
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 1.5;
@@ -42,24 +42,29 @@ a{
 	text-decoration: none;
 	display: inline-block;
 	position: relative;
+	transition: all 0.3s cubic-bezier(.41,0,.13,1.005);
 
 	&:hover{
 		color: var(--color-link-hover);
 		text-decoration: none;
+		transition: all 0.3s cubic-bezier(.41,0,.13,1.005);
 
 		&:before{
+			width: 100%;
 			background-color: currentColor;
+			transition: all 0.3s cubic-bezier(.41,0,.13,1.005);
 		}
 	}
 
 	&:before{
 		content: '';
-		width: 100%;
+		width: 0%;
 		height: 1px;
 		left: 0px;
 		bottom: 0px;
 		position: absolute;
 		background-color: currentColor;
+		transition: all 0.3s cubic-bezier(.41,0,.13,1.005);
 	}
 }
 
