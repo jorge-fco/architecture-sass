@@ -7,12 +7,12 @@
 <meta name="theme-color" content="#000000">
 <meta name="google" content="notranslate">
 <meta itemprop="description" content="Lógica y arquitectura de carpetas para el lenguaje de SCSS en proyectos web">
-<meta name="keywords" content="jorgefcomx, boostrap, bulma, code, kube, superkube, sass, scss, css, architecture, web, website" />
+<meta name="keywords" content="framework, reset, jorgefcomx, boostrap, bulma, code, kube, superkube, sass, scss, css, architecture, web, website" />
 <!--TITLE-->
 <title>Architecture [SCSS] – Developer by Jorge Fco.™</title>
 <!--ICONS-->
 <!--CSS-->
-<link rel="stylesheet" href="assets/dist/app.min.css?v=0.04">
+<link rel="stylesheet" href="assets/dist/app.min.css?v=0.05">
 </head><body>
 <main class="page">
 <section class="page__section">
@@ -25,7 +25,8 @@
 </div>
 <!--HEADER-->
 <article class="page__article">
-<h3>Estructura de carpetas</h3>
+<h3>1.0 Estructura de carpetas</h3>
+<p>Listado de las 6 carpetas que conforman la arquitectura.</p>
 <pre>
 <strong class="is-code-blue-dark">📦 scss</strong>
 <data>└── </data><span>📁 vendors</span>
@@ -37,7 +38,7 @@
 <strong class="is-code-blue">📄 main.scss</strong>
 </pre>
 <p class="is-caption">Estrucrura y orden de la carpeta con el nombre scss</p>
-<h3>Carpeta vendors</h3>
+<h3>1.1 Carpeta vendors</h3>
 <pre>
 <strong class="is-code-blue-dark">📁 vendors</strong>
 <data>└── </data><span class="is-color-orange">@import</span> <span class="is-code-pink">'_reset.scss'</span>
@@ -49,7 +50,7 @@
 <data>.</data>
 <data>└── </data><strong class="is-code-green">📄 vendors.scss</strong>
 </pre>
-<h3>Carpeta helpers</h3>
+<h3>1.2 Carpeta helpers</h3>
 <p>Functions, mixins, modifiers and breakpoints.</p>
 <pre>
 <strong class="is-code-blue-dark">📁 helpers</strong>
@@ -61,7 +62,7 @@
 <data>.</data>
 <data>└── </data><strong class="is-code-green">📄 helpers.scss</strong>
 </pre>
-<h3>Carpeta base</h3>
+<h3>1.3 Carpeta base</h3>
 <pre>
 <strong class="is-code-blue-dark">📁 base</strong>
 <data>└── </data><span class="is-color-orange">@import</span> <span class="is-code-pink">'_root.scss'</span>
@@ -74,7 +75,24 @@
 <data>.</data>
 <data>└── </data><strong class="is-code-green">📄 base.scss</strong>
 </pre>
-<h3>Carpeta layout</h3>
+<h3>1.4 Carpeta components</h3>
+<p></p>
+<pre>
+<strong class="is-code-blue-dark">📁 components</strong>
+<data>└── </data><span class="is-color-orange">@import</span> <span class="is-code-pink">'_forms.scss'</span>
+<data>└── </data><span class="is-color-orange">@import</span> <span class="is-code-pink">'_buttons.scss'</span>
+<data>└── </data><span class="is-color-orange">@import</span> <span class="is-code-pink">'_select.scss'</span>
+<data>└── </data><span class="is-color-orange">@import</span> <span class="is-code-pink">'_checkbox.scss'</span>
+<data>└── </data><span class="is-color-orange">@import</span> <span class="is-code-pink">'_modal.scss'</span>
+<data>└── </data><span class="is-color-orange">@import</span> <span class="is-code-pink">'_video.scss'</span>
+<data>└── </data><span class="is-color-orange">@import</span> <span class="is-code-pink">'_slider.scss'</span>
+<data>└── </data><span class="is-color-orange">@import</span> <span class="is-code-pink">'_whatsapp.scss'</span>
+<data>.</data>
+<data>.</data>
+<data>.</data>
+<data>└── </data><strong class="is-code-green">📄 components.scss</strong>
+</pre>
+<h3>1.5 Carpeta layout</h3>
 <pre>
 <strong class="is-code-blue-dark">📁 layout</strong>
 <data>└── </data><span class="is-color-orange">@import</span> <span class="is-code-pink">'_header.scss'</span>
@@ -89,7 +107,7 @@
 <data>.</data>
 <data>└── </data><strong class="is-code-green">📄 layout.scss</strong>
 </pre>
-<h3>Carpeta pages</h3>
+<h3>1.6 Carpeta pages</h3>
 <pre>
 <strong class="is-code-blue-dark">📁 pages</strong>
 <data>└── </data><span class="is-color-orange">@import</span> <span class="is-code-pink">'_home.scss'</span>

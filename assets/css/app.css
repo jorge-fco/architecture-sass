@@ -233,6 +233,7 @@ svg {
 }
 .page__article h3 {
   font-size: 1.6rem;
+  font-weight: 500;
   margin-top: calc(6 * 1rem);
   margin-bottom: 16px;
 }
