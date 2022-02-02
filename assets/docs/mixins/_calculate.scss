@@ -1,7 +1,0 @@
-@function tvh ($num, $viewport){
-	@return view($num, $viewport) * 1vh;
-}
-
-@function view($num, $y){
-	@return ($num * 100) / $y;
-}

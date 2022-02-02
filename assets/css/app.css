@@ -1,48 +1,207 @@
-/*!
-
-*/
-/*=
-	Bootstrap
-	Kube
-	Bulma
-	Pure
-	.
-	.
-	.
-*/
-/*=
-	Animate CSS
-	.
-	.
-	.
-*/
-/*=
-	Carousel
-	Flickity
-	.
-	.
-	.
-*/
-.background-gradient {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#a18cd1), to(#fbc2eb));
-  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
-}
-
-.background-linear {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), color-stop(50%, rgba(0, 0, 0, 0.9)), to(#000));
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9) 50%, #000);
-}
-
-/* =Calculate formula
------------------------------------------------------------------------------*/
-/* =Porcentaje
------------------------------------------------------------------------------*/
-/* =Size viewport width
------------------------------------------------------------------------------*/
-/* =Size viewport height
------------------------------------------------------------------------------*/
+@charset "UTF-8";
 /*
-	* https://github.com/stubbornella/oocss
-	* Convert font-size from px to rem with px fallback
-	* https://github.com/stubbornella/oocss/blob/master/oocss/src/components/utils/_fontSize.scss
+	📁 App ––> CSS
+	👨🏻‍💻 Developer by Jorge Fco.™
+	🌐 https://jorge-fco.com/
+	©2022
 */
+:root {
+  --color-text: #222222;
+  --color-text-light: #757575;
+  --color-text-dark: #000000;
+  --color-body: red;
+  --color-divider: #dedede;
+}
+
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select {
+  margin: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  color: var(--color-text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0px;
+  padding: 0px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  margin-top: 0px;
+  margin-bottom: 1rem;
+  padding: 0px;
+  position: relative;
+}
+
+a {
+  display: inline-block;
+  position: relative;
+}
+
+time {
+  font-family: "Source Code Pro", monospace;
+}
+
+code {
+  font-family: "JetBrains Mono", monospace;
+}
+
+pre {
+  font-family: "JetBrains Mono", monospace;
+}
+
+/*
+	📁 Page ––> General
+	👨🏻‍💻 Developer by Jorge Fco.™
+	🌐 https://jorge-fco.com/
+	©2022
+*/
+.page {
+  width: 100%;
+  position: relative;
+  padding-top: 6em;
+  padding-bottom: 6em;
+}
+
+.page__section {
+  width: 100%;
+  position: relative;
+}
+
+.page__container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1140px;
+  position: relative;
+}
+
+.page__header {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+.page__header h1 {
+  font-size: 3rem;
+  margin: 0px;
+}
+.page__header p {
+  color: var(--color-text-light);
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+.page__header p span {
+  padding: 0px;
+  margin-top: 0px;
+  margin-right: 2px;
+  margin-bottom: 0px;
+  font-size: inherit;
+  line-height: normal;
+  top: 2px;
+  position: relative;
+}
+.page__header time {
+  color: var(--color-text-light);
+  font-size: 12px;
+}
+
+.page__article {
+  width: 100%;
+  position: relative;
+}
+.page__article h2 {
+  font-size: 2rem;
+  margin-top: calc(8 * 1rem);
+  margin-bottom: 20px;
+}
+.page__article h2:before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  left: 0px;
+  bottom: -10px;
+  background-color: var(--color-divider);
+  position: absolute;
+}
+.page__article code {
+  font-size: 16px;
+  display: inline-block;
+  position: relative;
+  margin: 0px;
+  color: #f92672;
+  background: #f2f2f2;
+  border-radius: 2px;
+  padding: 2px 6px;
+}
+.page__article pre {
+  font-size: 16px;
+  width: 100%;
+  position: relative;
+  display: block;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  color: #f92672;
+  background: #f2f2f2;
+  border-radius: 2px;
+  padding: 12px 20px;
+}
+.page__article p {
+  color: #222;
+  font-size: 1.25rem;
+  line-height: 1.55;
+  margin: 0px;
+}
+.page__article p + p {
+  margin-top: 1rem;
+}
