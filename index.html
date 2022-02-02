@@ -4,24 +4,103 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="theme-color" content="#000000">
+<meta name="google" content="notranslate">
+<meta itemprop="description" content="Lógica y arquitectura de carpetas para el lenguaje de SCSS en proyectos web">
+<meta name="keywords" content="jorgefcomx, boostrap, bulma, code, kube, superkube, sass, scss, css, architecture, web, website" />
 <!--TITLE-->
 <title>Architecture [SCSS] – Developer by Jorge Fco.™</title>
 <!--ICONS-->
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <!--CSS-->
-<link rel="stylesheet" href="assets/dist/app.min.css?v=0.02">
+<link rel="stylesheet" href="assets/dist/app.min.css?v=0.04">
 </head><body>
 <main class="page">
 <section class="page__section">
 <div class="page__container">
+<!--HEADER-->
 <div class="page__header">
-<p>Developer by
-<span class="material-icons">bolt</span><a href="" role="link" target="_blank">Jorge Fco.</a>
-</p>
+<p>Developer by <a href="https://jorge-fco.com/" role="link" target="_blank">Jorge Fco.</a></p>
 <h1>Architecture [SCSS]</h1>
-<time>00/00/2022</time>
+<time>Última actualización: 00/02/2022</time>
 </div>
+<!--HEADER-->
 <article class="page__article">
+<h3>Estructura de carpetas</h3>
+<pre>
+<strong class="is-code-blue-dark">📦 scss</strong>
+<data>└── </data><span>📁 vendors</span>
+<data>└── </data><span>📁 helpers</span>
+<data>└── </data><span>📁 base</span>
+<data>└── </data><span>📁 components</span>
+<data>└── </data><span>📁 layout</span>
+<data>└── </data><span>📁 pages</span>
+<strong class="is-code-blue">📄 main.scss</strong>
+</pre>
+<p class="is-caption">Estrucrura y orden de la carpeta con el nombre scss</p>
+<h3>Carpeta vendors</h3>
+<pre>
+<strong class="is-code-blue-dark">📁 vendors</strong>
+<data>└── </data><span class="is-color-orange">@import</span> <span class="is-code-pink">'_reset.scss'</span>
+<data>└── </data><span class="is-color-orange">@import</span> <span class="is-code-pink">'_framework.scss'</span>
+<data>└── </data><span class="is-color-orange">@import</span> <span class="is-code-pink">'_animate.scss'</span>
+<data>└── </data><span class="is-color-orange">@import</span> <span class="is-code-pink">'_carousel.scss'</span>
+<data>.</data>
+<data>.</data>
+<data>.</data>
+<data>└── </data><strong class="is-code-green">📄 vendors.scss</strong>
+</pre>
+<h3>Carpeta helpers</h3>
+<p>Functions, mixins, modifiers and breakpoints.</p>
+<pre>
+<strong class="is-code-blue-dark">📁 helpers</strong>
+<data>└── </data><span class="is-color-orange">@import</span> <span class="is-code-pink">'_mixins.scss'</span>
+<data>└── </data><span class="is-color-orange">@import</span> <span class="is-code-pink">'_modifiers.scss'</span>
+<data>└── </data><span class="is-color-orange">@import</span> <span class="is-code-pink">'_breakpoints.scss'</span>
+<data>.</data>
+<data>.</data>
+<data>.</data>
+<data>└── </data><strong class="is-code-green">📄 helpers.scss</strong>
+</pre>
+<h3>Carpeta base</h3>
+<pre>
+<strong class="is-code-blue-dark">📁 base</strong>
+<data>└── </data><span class="is-color-orange">@import</span> <span class="is-code-pink">'_root.scss'</span>
+<data>└── </data><span class="is-color-orange">@import</span> <span class="is-code-pink">'_fonts.scss'</span>
+<data>└── </data><span class="is-color-orange">@import</span> <span class="is-code-pink">'_icons.scss'</span>
+<data>└── </data><span class="is-color-orange">@import</span> <span class="is-code-pink">'_variables.scss'</span>
+<data>└── </data><span class="is-color-orange">@import</span> <span class="is-code-pink">'_typography.scss'</span>
+<data>.</data>
+<data>.</data>
+<data>.</data>
+<data>└── </data><strong class="is-code-green">📄 base.scss</strong>
+</pre>
+<h3>Carpeta layout</h3>
+<pre>
+<strong class="is-code-blue-dark">📁 layout</strong>
+<data>└── </data><span class="is-color-orange">@import</span> <span class="is-code-pink">'_header.scss'</span>
+<data>└── </data><span class="is-color-orange">@import</span> <span class="is-code-pink">'_navigation.scss'</span>
+<data>└── </data><span class="is-color-orange">@import</span> <span class="is-code-pink">'_menu.scss'</span>
+<data>└── </data><span class="is-color-orange">@import</span> <span class="is-code-pink">'_aside.scss'</span>
+<data>└── </data><span class="is-color-orange">@import</span> <span class="is-code-pink">'_container.scss'</span>
+<data>└── </data><span class="is-color-orange">@import</span> <span class="is-code-pink">'_loader.scss'</span>
+<data>└── </data><span class="is-color-orange">@import</span> <span class="is-code-pink">'_footer.scss'</span>
+<data>.</data>
+<data>.</data>
+<data>.</data>
+<data>└── </data><strong class="is-code-green">📄 layout.scss</strong>
+</pre>
+<h3>Carpeta pages</h3>
+<pre>
+<strong class="is-code-blue-dark">📁 pages</strong>
+<data>└── </data><span class="is-color-orange">@import</span> <span class="is-code-pink">'_home.scss'</span>
+<data>└── </data><span class="is-color-orange">@import</span> <span class="is-code-pink">'_about.scss'</span>
+<data>└── </data><span class="is-color-orange">@import</span> <span class="is-code-pink">'_contact.scss'</span>
+<data>└── </data><span class="is-color-orange">@import</span> <span class="is-code-pink">'_404.scss'</span>
+<data>.</data>
+<data>.</data>
+<data>.</data>
+<data>└── </data><strong class="is-code-green">📄 pages.scss</strong>
+</pre>
 </article>
 </div>
 </section>

@@ -1,4 +1,4 @@
-@mixin autoAlpha($status) {
+@mixin _autoAlpha($status) {
 	@if $status {
 		opacity: 0;
 		visibility: hidden;

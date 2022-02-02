@@ -27,6 +27,7 @@
 	width: 100%;
 	position: relative;
 	text-align: center;
+	margin-bottom: 2em;
 
 	h1{
 		font-size: 3rem;
@@ -37,22 +38,49 @@
 		color: var(--color-text-light);
 		font-size: 14px;
 		margin-bottom: 12px;
-
-		span{
-			padding: 0px;
-			margin-top: 0px;
-			margin-right: 2px;
-			margin-bottom: 0px;
-			font-size: inherit;
-			line-height: normal;
-			top: 2px;
-			position: relative;
-		}
 	}
 
 	time{
 		color: var(--color-text-light);
 		font-size: 12px;
+	}
+}
+
+.page__row{
+	display: grid;
+	grid-template-columns: repeat(12,1fr);
+	grid-column-gap: 32px;
+	//grid-row-gap: 6rem;
+}
+
+.page__column__left{
+	grid-column-end: span 3;
+}
+
+.page__column__right{
+	grid-column-end: span 9;
+}
+
+.page__aside__item{
+	width: 100%;
+	position: relative;
+
+	label{
+		color: var(--color-text-light);
+		font-weight: 700;
+		margin-bottom: 12px;
+	}
+
+	a, p{
+		color: var(--color-text-light);
+		font-size: 14px;
+		margin: 0px;
+
+		svg{
+			width: 14px;
+			margin-right: 6px;
+			position: relative;
+		}
 	}
 }
 
@@ -62,7 +90,7 @@
 
 	h2{
 		font-size: 2rem;
-		margin-top: calc(8 * 1rem);
+		//margin-top: calc(8 * 1rem);
 		margin-bottom: 20px;
 
 		&:before{
@@ -74,6 +102,12 @@
 			background-color: var(--color-divider);
 			position: absolute;
 		}
+	}
+
+	h3{
+		font-size: 1.6rem;
+		margin-top: calc(6 * 1rem);
+		margin-bottom: 16px;
 	}
 
 	code{
@@ -94,19 +128,68 @@
 		position: relative;
 		display: block;
 		margin-top: 2em;
-		margin-bottom: 2em;
+		//margin-bottom: 2em;
 
-		color: #f92672;
+		color: var(--color-text);
 		background: #f2f2f2;
+		background-color: #f5f8fa;
 		border-radius: 2px;
-		padding: 12px 20px;
+		padding: 20px 20px;
+
+		strong{
+			color: var(--color-text);
+			display: inline-block;
+
+			&.is-code-blue{
+				color: #0550ae;
+			}
+			&.is-code-blue-dark{
+				color: #0a3069;
+			}
+			&.is-code-green{
+				color: #116329;
+			}
+		}
+
+		data{
+			font-family: 'JetBrains Mono', monospace;
+			color: var(--color-text);
+			display: inline-block;
+			padding: 0px;
+			position: relative;
+		}
+
+		span{
+			font-family: 'JetBrains Mono', monospace;
+			color: var(--color-text);
+			display: inline-block;
+			padding: 0px;
+			position: relative;
+
+			&.is-color-orange{
+				color: #953800;
+			}
+			&.is-code-pink{
+				color: #f92672;
+			}
+		}
 	}
 
 	p{
-		color: #222;
+		color: var(--color-text-light);
 		font-size: 1.25rem;
 		line-height: 1.55;
 		margin: 0px;
+
+		&.is-caption{
+			color: var(--color-text-light);
+			font-size: 12px;
+			margin-top: 2em;
+			display: block;
+			padding-left: 10px;
+			position: relative;
+			border-left: 2px solid var(--color-text-light);
+		}
 
 		+ p{
 			margin-top: 1rem;

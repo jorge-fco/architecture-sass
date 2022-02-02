@@ -9,6 +9,8 @@ body{
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 1.5;
+
+	width: 100%;
 	margin: 0px;
 	padding: 0px;
 	-moz-osx-font-smoothing: grayscale;
@@ -23,13 +25,32 @@ h1, h2, h3, h4, h5, h6{
 	position: relative;
 }
 
+p{
+	font-weight: 400;
+	padding: 0px;
+	position: relative;
+}
+
+strong{
+	font-weight: 700;
+	position: relative;
+}
+
 a{
+	font-weight: 400;
 	display: inline-block;
 	position: relative;
 }
 
+label{
+	display: block;
+	padding: 0px;
+	position: relative;
+}
+
 time{
-	font-family: 'Source Code Pro', monospace;
+	font-family: 'JetBrains Mono', monospace;
+	font-weight: 400;
 }
 
 code{
@@ -38,4 +59,11 @@ code{
 
 pre{
 	font-family: 'JetBrains Mono', monospace;
+}
+
+svg{
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+	position: relative;
 }
