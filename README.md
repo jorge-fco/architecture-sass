@@ -8,5 +8,5 @@
 - [Superkube](https://imperavi.com/superkube/)
 - [Bulma](https://bulma.io/)
 - [Bootstrap](https://getbootstrap.com/)
-- https://cssreference.io/
-- https://htmlreference.io/
+- [CSSReference](https://cssreference.io/)
+- [HTMLReference](https://htmlreference.io/)
