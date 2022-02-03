@@ -11,9 +11,11 @@
   --color-text-dark:	#000000;
   --color-link:	#0057ff;
   --color-link-hover:	#003ecb;
-  --color-body:	red;
+  --color-body:	#fff;
   --color-divider:	#dedede;
   --color-accent:	#f5f5f6;
+  --color-background-code:	#f5f5f6;
+  --color-background-precode:	#f5f8fa;
   --font-text:	-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
 }
 
@@ -307,12 +309,17 @@ svg {
   width: 100%;
   position: relative;
 }
-.page__article h2 {
+
+.page__article__text {
+  width: 100%;
+  position: relative;
+}
+.page__article__text h2 {
   font-size: 2rem;
   margin-top: calc(6*1rem);
   margin-bottom: 24px;
 }
-.page__article h2:before {
+.page__article__text h2:before {
   content: "";
   width: 100%;
   height: 1px;
@@ -321,74 +328,74 @@ svg {
   background-color: var(--color-divider);
   position: absolute;
 }
-.page__article h3 {
+.page__article__text h3 {
   font-size: 1.6rem;
   font-weight: 600;
   margin-top: calc(4 * 1rem);
   margin-bottom: 16px;
 }
-.page__article code {
-  font-size: 16px;
+.page__article__text code {
+  font-size: 14px;
   display: inline-block;
   position: relative;
   margin: 0px;
   color: #f92672;
-  background: #f2f2f2;
+  border: 0px;
   border-radius: 2px;
+  background-color: var(--color-background-code);
   padding: 2px 6px;
 }
-.page__article pre {
+.page__article__text pre {
   font-size: 16px;
+  margin-top: 2em;
   width: 100%;
   position: relative;
   display: block;
-  margin-top: 2em;
   color: var(--color-text);
-  background: #f2f2f2;
-  background-color: #f5f8fa;
+  background-color: var(--color-background-precode);
   border-radius: 2px;
   padding: 20px 20px;
 }
-.page__article pre strong {
+.page__article__text pre strong {
   color: var(--color-text);
   display: inline-block;
 }
-.page__article pre strong.is-code-blue {
+.page__article__text pre strong.is-code-blue {
   color: #0550ae;
 }
-.page__article pre strong.is-code-blue-dark {
+.page__article__text pre strong.is-code-blue-dark {
   color: #0a3069;
 }
-.page__article pre strong.is-code-green {
+.page__article__text pre strong.is-code-green {
   color: #116329;
 }
-.page__article pre data {
+.page__article__text pre data {
   font-family: "JetBrains Mono", monospace;
   color: var(--color-text);
   display: inline-block;
   padding: 0px;
   position: relative;
 }
-.page__article pre span {
+.page__article__text pre span {
   font-family: "JetBrains Mono", monospace;
   color: var(--color-text);
   display: inline-block;
   padding: 0px;
   position: relative;
 }
-.page__article pre span.is-color-orange {
+.page__article__text pre span.is-color-orange {
   color: #953800;
 }
-.page__article pre span.is-code-pink {
+.page__article__text pre span.is-code-pink {
   color: #f92672;
 }
-.page__article p {
+.page__article__text p {
   color: var(--color-text-light);
   font-size: 18px;
   line-height: 1.55;
   margin: 0px;
 }
-.page__article p.is-caption {
+.page__article__text p.is-caption {
   color: var(--color-text-light);
   font-size: 12px;
   margin-top: 2em;
@@ -397,6 +404,52 @@ svg {
   position: relative;
   border-left: 2px solid var(--color-text-light);
 }
-.page__article p + p {
+.page__article__text p + p {
   margin-top: 1rem;
+}
+
+.page__callout__block {
+  width: 100%;
+  display: block;
+  position: relative;
+  border-radius: 3px;
+  padding: 16px 20px;
+  border-left: 4px solid var(--color-divider);
+  background-color: var(--color-accent);
+  margin-top: 2em;
+}
+.page__callout__block p {
+  color: var(--color-text);
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+.page__callout__block p code {
+  font-size: 14px;
+  font-weight: 500;
+  color: #f92672;
+  border: 0px;
+  border-radius: 2px;
+  background-color: var(--color-background-code);
+  padding: 2px 6px;
+}
+.page__callout__block ul {
+  width: 100%;
+  list-style: none;
+  margin: 0px;
+  display: block;
+  padding: 0px;
+}
+.page__callout__block ul li {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 14px;
+  color: var(--color-text-light);
+}
+.page__callout__block ul li:before {
+  content: "•";
+  color: currentColor;
+  position: relative;
+  margin-right: 4px;
+}
+.page__callout__block ul li + li {
+  margin-top: 6px;
 }

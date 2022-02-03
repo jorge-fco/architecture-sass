@@ -1,0 +1,17 @@
+@mixin _code(){
+	color: #f92672;
+	border: 0px;
+	border-radius: 2px;
+	background-color: var(--color-background-code);
+	padding: 2px 6px;
+}
+
+@mixin _precode(){
+	width: 100%;
+	position: relative;
+	display: block;
+	color: var(--color-text);
+	background-color: var(--color-background-precode);
+	border-radius: 2px;
+	padding: 20px 20px;
+}

@@ -4,6 +4,11 @@
 
 📌 [View Documentation](https://jorge-fco.github.io/architecture-sass/)
 
+## Mixins
+- Row
+- Grid
+- Trancitions
+
 ## 📎 References
 - [Superkube](https://imperavi.com/superkube/)
 - [Bulma](https://bulma.io/)

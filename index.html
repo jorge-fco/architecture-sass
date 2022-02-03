@@ -1,21 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
+<!--METATAGS--><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="theme-color" content="#000000">
 <meta name="google" content="notranslate">
+<meta name="generator" content="GitHub" />
+<meta name="audience" content="all" />
 <meta itemprop="description" content="Lógica y arquitectura de carpetas para el lenguaje de SCSS en proyectos web">
 <meta name="keywords" content="framework, reset, jorgefcomx, boostrap, bulma, code, kube, superkube, sass, scss, css, architecture, web, website" />
-<!--TITLE-->
-<title>Architecture [SCSS] – Developer by Jorge Fco.™</title>
-<!--FONTS-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
+<!--FAVICONS--><link rel="apple-touch-icon" sizes="57x57" href="assets/favicons/apple-icon-57x57.png?v=">
+<link rel="apple-touch-icon" sizes="60x60" href="assets/favicons/apple-icon-60x60.png?v=">
+<link rel="apple-touch-icon" sizes="72x72" href="assets/favicons/apple-icon-72x72.png?v=">
+<link rel="apple-touch-icon" sizes="76x76" href="assets/favicons/apple-icon-76x76.png?v=">
+<link rel="apple-touch-icon" sizes="114x114" href="assets/favicons/apple-icon-114x114.png?v=">
+<link rel="apple-touch-icon" sizes="120x120" href="assets/favicons/apple-icon-120x120.png?v=">
+<link rel="apple-touch-icon" sizes="144x144" href="assets/favicons/apple-icon-144x144.png?v=">
+<link rel="apple-touch-icon" sizes="152x152" href="assets/favicons/apple-icon-152x152.png?v=">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-icon-180x180.png?v=">
+<link rel="icon" type="image/png" sizes="192x192"  href="assets/favicons/android-icon-192x192.png?v=">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png?v=">
+<link rel="icon" type="image/png" sizes="96x96" href="assets/favicons/favicon-96x96.png?v=">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png?v=">
+<link rel="manifest" href="assets/favicons/manifest.json?v=">
+<meta name="msapplication-TileColor" content="#000000">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png?v=">
+<meta name="theme-color" content="#000000">
+<!--TITLE--><title>Architecture [SCSS] – Developer by Jorge Fco.™</title>
+<!--FONTS--><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-<!--CSS-->
-<link rel="stylesheet" href="assets/dist/app.min.css?v=0.08">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+<!--CSS--><link rel="stylesheet" href="assets/dist/app.min.css?v=1.01">
 </head><body>
 <main class="page">
 <section class="page__section">
@@ -49,12 +66,27 @@
 </div>
 </aside></div>
 <div class="page__column__right" role="column">
-<article class="page__article"><h2>🔍  Introducción</h1>
-<p>La arquitectura de SCSS nace de la necesidad de estructurar y optimizar el tiempo de desarrollo en la parte visual de un proyecto web.</p>
+<article class="page__article">
+<div class="page__article__text"><h2>🔍  Introducción</h1>
+<p>La arquitectura de <a href="https://sass-lang.com/" target="_blank" rel="nofollow">SCSS</a> nace de la necesidad de estructurar y optimizar el tiempo de desarrollo en la parte visual de un proyecto web.</p>
 <p>Ayudando a organizar por carpetas los archivos necesarios para trabajar individualmente o en equipo con otros colaboradores. El orden es indispensable cuando se inicia un proyecto ayuda a mejorar el flujo de trabajo y más si se habla de trabajo en equipo.</p>
 <h2>🔥 Problema</h1>
 <p>Anteriormente para iniciar a maquetar un proyecto se iniciaba creando los archivos necesarios con extensión <code>scss</code>, sin ninguna estructura o orden. Esto ocasiona bastantes problemas al momento de realizar mantenimiento, escalabilidad  o soporte del proyecto.</p>
-<p>Pero principalmente a la hora de trabajar en equipo con otros desarrolladores, causaba numerosos conflictos en el instante que se compilaban los archivos.</p><h3>1.0 Estructura de carpetas</h3>
+<p>Pero principalmente a la hora de trabajar en equipo con otros desarrolladores, causaba numerosos conflictos en el instante que se compilaban los archivos.</p>
+<h2>💡 Solución</h1>
+<p>La solución para esta problemática se fundó en organizar una secuencia de carpetas con nombres y nomenclaturas que se adoptan de <strong>Frameworks de CSS</strong> como lo son <a href="https://imperavi.com/superkube/" role="button" target="_blank" rel="nofollow">Superkube</a>, <a href="https://bulma.io/" role="button" target="_blank" rel="nofollow">Bulma</a> y <a href="https://getbootstrap.com/" role="button" target="_blank" rel="nofollow">Bootstrap.</a></p>
+<p>Cada una de las carpetas contiene una serie de archivos en los cuales se puede escribir el respectivo código para modular y dividir por páginas, secciones o componentes cada una de ellas.</p></div>
+<div class="page__article__text"><h2>📚 Documentación</h2>
+<div class="page__callout__block">
+<p><strong>⚡️Anotaciones</strong></p>
+<p>Antes de iniciar tu proyecto requerimos de crear un archivo llamado <code>.gitignore</code> en el cual agregaremos las siguientes líneas:</p>
+<ul>
+<li>assets/css/*</li>
+<li>assets/dist/*</li>
+<li>prepros.config</li>
+</ul>
+</div>
+<h3>1.0 Estructura de carpetas</h3>
 <p>Listado de las 6 carpetas que conforman la arquitectura para la compilación de archivos. Todo estos archivos generan nuestro archivo final llamado <code>main.css</code></p>
 <pre>
 <strong class="is-code-blue-dark">📦 scss</strong>
@@ -147,7 +179,7 @@
 <data>.</data>
 <data>.</data>
 <data>└── </data><strong class="is-code-green">📄 pages.scss</strong>
-</pre>
+</pre></div>
 </article>
 </div>
 </div>
