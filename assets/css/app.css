@@ -310,6 +310,98 @@ svg {
   position: relative;
 }
 
+.page__article__solution {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  margin-top: 4em;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 20px 20px;
+  position: relative;
+  border-radius: 2px;
+  background-color: var(--color-background-precode);
+}
+.page__article__solution li {
+  position: relative;
+}
+.page__article__solution li:nth-child(2) .page__article__solution__item__box {
+  background-color: #fff8c5;
+}
+.page__article__solution li:nth-child(2) .page__article__solution__item__box span {
+  color: var(--color-text);
+}
+.page__article__solution li:nth-child(2) .page__article__solution__item__box svg {
+  fill: #9a6700;
+}
+.page__article__solution li:nth-child(4) .page__article__solution__item__box {
+  background-color: #dafbe1;
+}
+.page__article__solution li:nth-child(4) .page__article__solution__item__box span {
+  color: var(--color-text);
+}
+.page__article__solution li:nth-child(4) .page__article__solution__item__box svg {
+  fill: #0969da;
+}
+.page__article__solution li + li {
+  margin-left: 64px;
+}
+.page__article__solution li + li:before {
+  content: "";
+  width: 64px;
+  height: 0px;
+  top: 50%;
+  left: -64px;
+  display: inline-block;
+  position: absolute;
+  border: 1px dashed var(--color-divider);
+}
+
+.page__article__solution__item__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  padding: 10px 12px;
+  position: relative;
+  background-color: #ddf4ff;
+}
+.page__article__solution__item__box span {
+  color: #0969da;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  display: inline-block;
+  padding: 0px;
+  position: relative;
+}
+.page__article__solution__item__box svg {
+  width: 14px;
+  fill: #F4B500;
+  margin-right: 6px;
+  display: inline-block;
+  padding: 0px;
+  position: relative;
+}
+
 .page__article__text {
   width: 100%;
   position: relative;

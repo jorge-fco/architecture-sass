@@ -7,7 +7,7 @@
 ## Mixins
 - Row
 - Grid
-- Trancitions
+- Transitions
 
 ## 📎 References
 - [Superkube](https://imperavi.com/superkube/)
