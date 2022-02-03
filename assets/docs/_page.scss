@@ -38,7 +38,6 @@
 	}
 
 	p{
-		//font-family: 'VT323', monospace;
 		color: var(--color-text-light);
 		font-size: 14px;
 		margin-bottom: 12px;
@@ -186,6 +185,7 @@
 				}
 			}
 		}
+
 		&:nth-child(4){
 			.page__article__solution__item__box{
 				background-color: #dafbe1;

@@ -9,6 +9,10 @@
   --color-text:	#222222;
   --color-text-light:	#757575;
   --color-text-dark:	#000000;
+  --color-blue:	#0969da;
+  --color-blue-light:	#ddf4ff;
+  --color-green:	#1a7f37;
+  --color-green-light:	#dafbe1;
   --color-link:	#0057ff;
   --color-link-hover:	#003ecb;
   --color-body:	#fff;
@@ -159,6 +163,103 @@ svg {
   display: inline-block;
   margin: 0px;
   padding: 0px;
+  position: relative;
+}
+
+.page__article__fluid {
+  width: 100%;
+  display: block;
+  margin-top: 2em;
+  margin-bottom: 4em;
+  position: relative;
+  padding: 40px 20px;
+  border-radius: 2px;
+  border: 1px solid var(--color-divider);
+  background-color: var(--color-background-precode);
+}
+.page__article__fluid ul {
+  width: 100%;
+  display: block;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  text-align: center;
+}
+.page__article__fluid ul li {
+  display: block;
+  position: relative;
+}
+.page__article__fluid ul li + li {
+  margin-top: 34px;
+}
+.page__article__fluid ul li + li:before {
+  content: "";
+  width: 1px;
+  height: 34px;
+  top: -34px;
+  left: 50%;
+  display: inline-block;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border: 1px dashed var(--color-divider);
+}
+
+.page__article__fluid__item {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 12px;
+  border-radius: 2px;
+  background-color: var(--color-blue-light);
+}
+.page__article__fluid__item span {
+  color: var(--color-text-light);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 10px;
+  line-height: 1;
+  display: block;
+  position: relative;
+}
+
+.page__article__fluid__item__circle {
+  width: 84px;
+  height: 84px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 100%;
+  border: 1px dashed var(--color-green);
+  background-color: var(--color-green-light);
+}
+.page__article__fluid__item__circle span {
+  font-family: "VT323", monospace;
+  font-size: 14px;
+  color: var(--color-green);
+  line-height: 1;
+  display: block;
   position: relative;
 }
 

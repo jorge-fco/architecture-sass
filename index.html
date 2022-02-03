@@ -32,7 +32,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
-<!--CSS--><link rel="stylesheet" href="assets/dist/app.min.css?v=1.01">
+<!--CSS--><link rel="stylesheet" href="assets/dist/app.min.css?v=1.02">
 </head><body>
 <main class="page">
 <section class="page__section">
@@ -112,6 +112,7 @@
 </ul>
 <!--DIAGRAM--></div>
 <div class="page__article__text"><h2>📚 Documentación</h2>
+<!--CALLOUT-->
 <div class="page__callout__block">
 <p><strong>⚡️Anotaciones</strong></p>
 <p>Antes de iniciar tu proyecto requerimos de crear un archivo llamado <code>.gitignore</code> en el cual agregaremos las siguientes líneas:</p>
@@ -121,6 +122,7 @@
 <li>prepros.config</li>
 </ul>
 </div>
+<!--CALLOUT-->
 <h3>1.0 Estructura de carpetas</h3>
 <p>Listado de las 6 carpetas que conforman la arquitectura para la compilación de archivos. Todo estos archivos generan nuestro archivo final llamado <code>main.css</code></p>
 <pre>
@@ -133,8 +135,49 @@
 <data>└── </data><span>📁 pages</span>
 <strong class="is-code-blue">📄 main.scss</strong>
 </pre>
-<p class="is-caption">Estrucrura y orden de la carpeta con el nombre scss</p>
-<h3>1.1 Carpeta vendors</h3>
+<p class="is-caption">Estrucrura y orden de la carpeta con el nombre scss.</p>
+<!--FLUID-->
+<div class="page__article__fluid">
+<ul role="items">
+<li role="item">
+<div class="page__article__fluid__item">
+<span>@import vendors/vendors</span>
+</div>
+</li>
+<li role="item">
+<div class="page__article__fluid__item">
+<span>@import helpers/helpers</span>
+</div>
+</li>
+<li role="item">
+<div class="page__article__fluid__item">
+<span>@import base/base</span>
+</div>
+</li>
+<li role="item">
+<div class="page__article__fluid__item">
+<span>@import components/components</span>
+</div>
+</li>
+<li role="item">
+<div class="page__article__fluid__item">
+<span>@import layout/layout</span>
+</div>
+</li>
+<li role="item">
+<div class="page__article__fluid__item">
+<span>@import pages/pages</span>
+</div>
+</li>
+<li role="item">
+<div class="page__article__fluid__item__circle">
+<span>main.scss</span>
+</div>
+</li>
+</ul>
+</div>
+<!--FLUID-->
+<h3>📁 1.1 Carpeta vendors</h3>
 <p>Esta carpeta almacena los archivos que hacen referencia a <strong>frameworks</strong>, <strong>librerías</strong> o <strong>plugins</strong> que se van a necesitar en el proyecto. Por ejemplo, si en el proyecto necesitamos utilizar un <strong>carousel</strong> se requiere importar el archivo de <code>css</code> de <a href="https://flickity.metafizzy.co/" target="_blank" rel="nofollow">flickity.</a></p>
 <pre>
 <strong class="is-code-blue-dark">📁 vendors</strong>
@@ -147,7 +190,7 @@
 <data>.</data>
 <data>└── </data><strong class="is-code-green">📄 vendors.scss</strong>
 </pre>
-<h3>1.2 Carpeta helpers</h3>
+<h3>📁 1.2 Carpeta helpers</h3>
 <p>La carpeta helpers contiene los archivos para declarar nuestras <a href="https://sass-lang.com/documentation/at-rules/function" target="_blank" rel="nofollow">@functions</a>, <a href="https://sass-lang.com/documentation/at-rules/mixin" target="_blank" rel="nofollow">@mixins</a>, <a href="https://sass-lang.com/documentation/at-rules/extend" target="_blank" rel="nofollow">@extends</a> y breakpoints esenciales los cuales nos ayudarán a agilizar nuestra escritura de código <code>scss</code>.</p>
 <pre>
 <strong class="is-code-blue-dark">📁 helpers</strong>
@@ -159,7 +202,7 @@
 <data>.</data>
 <data>└── </data><strong class="is-code-green">📄 helpers.scss</strong>
 </pre>
-<h3>1.3 Carpeta base</h3>
+<h3>📁 1.3 Carpeta base</h3>
 <p>Esta carpeta incluye los archivos que determinan el estilo del proyecto. Debido a que guarda las  <a href="https://sass-lang.com/documentation/variables" target="_blank" rel="nofollow">variables</a> de <code>scss</code> para nuestra <strong>paleta de colores</strong>, <strong>tipografía</strong> e <strong>iconos</strong> que estaremos utilizando a lo largo de la maquetación visual del proyecto web.</p>
 <pre>
 <strong class="is-code-blue-dark">📁 base</strong>
@@ -173,7 +216,7 @@
 <data>.</data>
 <data>└── </data><strong class="is-code-green">📄 base.scss</strong>
 </pre>
-<h3>1.4 Carpeta components</h3>
+<h3>📁 1.4 Carpeta components</h3>
 <p>La carpeta components agrupa los archivos de <code>scss</code> con relación al estilo de los componentes que se requieren en el proyecto. Como por ejemplo los <strong>botones</strong>, <strong>formularios</strong>, <strong>checkbox</strong>, <strong>selects</strong> entre otros.</p>
 <p>Esto ayuda a que se asigne de manera rápida y sencilla el estilo definido a cada componente al momento de maquetar la parte visual del proyecto web.</p>
 <pre>
@@ -191,7 +234,7 @@
 <data>.</data>
 <data>└── </data><strong class="is-code-green">📄 components.scss</strong>
 </pre>
-<h3>1.5 Carpeta layout</h3>
+<h3>📁 1.5 Carpeta layout</h3>
 <p></p>
 <pre>
 <strong class="is-code-blue-dark">📁 layout</strong>
@@ -207,7 +250,7 @@
 <data>.</data>
 <data>└── </data><strong class="is-code-green">📄 layout.scss</strong>
 </pre>
-<h3>1.6 Carpeta pages</h3>
+<h3>📁 1.6 Carpeta pages</h3>
 <p></p>
 <pre>
 <strong class="is-code-blue-dark">📁 pages</strong>
