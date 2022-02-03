@@ -77,6 +77,7 @@
 <p>La solución para esta problemática se fundó en organizar una secuencia de carpetas con nombres y nomenclaturas que se adoptan de <strong>Frameworks de CSS</strong> como lo son <a href="https://imperavi.com/superkube/" role="button" target="_blank" rel="nofollow">Superkube</a>, <a href="https://bulma.io/" role="button" target="_blank" rel="nofollow">Bulma</a> y <a href="https://getbootstrap.com/" role="button" target="_blank" rel="nofollow">Bootstrap.</a></p>
 <p>Cada una de las carpetas contiene una serie de archivos en los cuales se puede escribir el respectivo código para modular y dividir por páginas, secciones o componentes cada una de ellas.</p>
 <p>Esta ordenación ayuda principalmente a no generar conflictos al instante de compilar nuestro núcleo de importaciones llamado <code>main.scss</code>, debido a que no se manipula dicho archivo.</p>
+<!--DIAGRAM-->
 <ul class="page__article__solution">
 <li role="item" class="page__article__solution__item">
 <div class="page__article__solution__item__box">
@@ -108,7 +109,8 @@
 <span>dist</span>
 </div>
 </li>
-</ul></div>
+</ul>
+<!--DIAGRAM--></div>
 <div class="page__article__text"><h2>📚 Documentación</h2>
 <div class="page__callout__block">
 <p><strong>⚡️Anotaciones</strong></p>
@@ -133,6 +135,7 @@
 </pre>
 <p class="is-caption">Estrucrura y orden de la carpeta con el nombre scss</p>
 <h3>1.1 Carpeta vendors</h3>
+<p>Esta carpeta almacena los archivos que hacen referencia a <strong>frameworks</strong>, <strong>librerías</strong> o <strong>plugins</strong> que se van a necesitar en el proyecto. Por ejemplo, si en el proyecto necesitamos utilizar un <strong>carousel</strong> se requiere importar el archivo de <code>css</code> de <a href="https://flickity.metafizzy.co/" target="_blank" rel="nofollow">flickity.</a></p>
 <pre>
 <strong class="is-code-blue-dark">📁 vendors</strong>
 <data>└── </data><span class="is-color-orange">@import</span> <span class="is-code-pink">'_reset.scss'</span>
@@ -145,7 +148,7 @@
 <data>└── </data><strong class="is-code-green">📄 vendors.scss</strong>
 </pre>
 <h3>1.2 Carpeta helpers</h3>
-<p>Functions, mixins, modifiers and breakpoints.</p>
+<p>La carpeta helpers contiene los archivos para declarar nuestras <a href="https://sass-lang.com/documentation/at-rules/function" target="_blank" rel="nofollow">@functions</a>, <a href="https://sass-lang.com/documentation/at-rules/mixin" target="_blank" rel="nofollow">@mixins</a>, <a href="https://sass-lang.com/documentation/at-rules/extend" target="_blank" rel="nofollow">@extends</a> y breakpoints esenciales los cuales nos ayudarán a agilizar nuestra escritura de código <code>scss</code>.</p>
 <pre>
 <strong class="is-code-blue-dark">📁 helpers</strong>
 <data>└── </data><span class="is-color-orange">@import</span> <span class="is-code-pink">'_mixins.scss'</span>
@@ -157,6 +160,7 @@
 <data>└── </data><strong class="is-code-green">📄 helpers.scss</strong>
 </pre>
 <h3>1.3 Carpeta base</h3>
+<p>Esta carpeta incluye los archivos que determinan el estilo del proyecto. Debido a que guarda las  <a href="https://sass-lang.com/documentation/variables" target="_blank" rel="nofollow">variables</a> de <code>scss</code> para nuestra <strong>paleta de colores</strong>, <strong>tipografía</strong> e <strong>iconos</strong> que estaremos utilizando a lo largo de la maquetación visual del proyecto web.</p>
 <pre>
 <strong class="is-code-blue-dark">📁 base</strong>
 <data>└── </data><span class="is-color-orange">@import</span> <span class="is-code-pink">'_root.scss'</span>
@@ -170,7 +174,8 @@
 <data>└── </data><strong class="is-code-green">📄 base.scss</strong>
 </pre>
 <h3>1.4 Carpeta components</h3>
-<p></p>
+<p>La carpeta components agrupa los archivos de <code>scss</code> con relación al estilo de los componentes que se requieren en el proyecto. Como por ejemplo los <strong>botones</strong>, <strong>formularios</strong>, <strong>checkbox</strong>, <strong>selects</strong> entre otros.</p>
+<p>Esto ayuda a que se asigne de manera rápida y sencilla el estilo definido a cada componente al momento de maquetar la parte visual del proyecto web.</p>
 <pre>
 <strong class="is-code-blue-dark">📁 components</strong>
 <data>└── </data><span class="is-color-orange">@import</span> <span class="is-code-pink">'_forms.scss'</span>
@@ -187,6 +192,7 @@
 <data>└── </data><strong class="is-code-green">📄 components.scss</strong>
 </pre>
 <h3>1.5 Carpeta layout</h3>
+<p></p>
 <pre>
 <strong class="is-code-blue-dark">📁 layout</strong>
 <data>└── </data><span class="is-color-orange">@import</span> <span class="is-code-pink">'_header.scss'</span>
@@ -202,6 +208,7 @@
 <data>└── </data><strong class="is-code-green">📄 layout.scss</strong>
 </pre>
 <h3>1.6 Carpeta pages</h3>
+<p></p>
 <pre>
 <strong class="is-code-blue-dark">📁 pages</strong>
 <data>└── </data><span class="is-color-orange">@import</span> <span class="is-code-pink">'_home.scss'</span>

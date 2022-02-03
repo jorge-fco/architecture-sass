@@ -15,3 +15,7 @@
 - [Bootstrap](https://getbootstrap.com/)
 - [CSSReference](https://cssreference.io/)
 - [HTMLReference](https://htmlreference.io/)
+- https://primer.style/
+
+## Credits
+Developer by [Jorge Fco™](https://jorge-fco.com/)
