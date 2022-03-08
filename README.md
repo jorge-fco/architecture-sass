@@ -7,6 +7,7 @@
 ## Mixins
 - Row
 - Grid
+- Full
 - Transitions
 
 ## 📎 References
