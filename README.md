@@ -10,6 +10,10 @@
 - Full
 - Transitions
 
+## Variables
+- [selection](https://developer.mozilla.org/en-US/docs/Web/CSS/::selection)
+- [placeholder](https://developer.mozilla.org/en-US/docs/Web/CSS/::placeholder)
+
 ## 📎 References
 - [Superkube](https://imperavi.com/superkube/)
 - [Bulma](https://bulma.io/)

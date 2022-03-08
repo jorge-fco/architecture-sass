@@ -36,6 +36,10 @@ p{
 
 }
 
+span{
+
+}
+
 strong{
 
 }
@@ -53,4 +57,19 @@ ul{
 	li{
 
 	}
+}
+
+ol{
+	li{
+
+	}
+}
+
+::placeholder {
+	color: $color-text-placeholder;
+}
+
+::selection {
+	color: $color-selection-text;
+	background-color: $color-selection-background;
 }
