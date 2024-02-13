@@ -9,11 +9,13 @@ html{
 	text-size-adjust: 100%;
 	text-rendering: optimizeLegibility;
 	-moz-osx-font-smoothing: grayscale;
+	scroll-behavior: smooth;
 }
 
 body{
 	width: 100%;
-	line-height: 1.5;
+	display: block;
+	line-height: 1.2;
 	margin: 0px;
 	padding: 0px;
 	overflow-x: hidden;
@@ -26,14 +28,18 @@ body{
 h1, h2, h3, h4, h5, h6{
 	padding: 0px;
 	margin: 0px;
+	position: relative;
 }
 
 a{
-
+	display: inline-block;
+	position: relative;
 }
 
 p{
-
+	padding: 0px;
+	margin: 0px;
+	position: relative;
 }
 
 span{
@@ -49,17 +55,31 @@ label{
 }
 
 svg{
+	display: inline-block;
 	margin: 0px;
 	padding: 0px;
+	position: relative;
 }
 
 ul{
+	list-style: none;
+	margin: 0px;
+	display: block;
+	padding: 0px;
+	position: relative;
+
 	li{
 
 	}
 }
 
 ol{
+	list-style: none;
+	margin: 0px;
+	display: block;
+	padding: 0px;
+	position: relative;
+
 	li{
 
 	}

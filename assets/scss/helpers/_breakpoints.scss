@@ -1,0 +1,36 @@
+@mixin media($breakpoint...){
+	@if index($breakpoint, Mobile){
+		@media (min-width:  500px) and (max-width:  767px) {
+			@content;
+		}
+	}
+	@if index($breakpoint, Tablet){
+		@media (min-width:  768px) {
+			@content;
+		}
+	}
+
+	@if index($breakpoint, Laptop){
+		@media (min-width:  1080px) {
+			@content;
+		}
+	}
+
+	@if index($breakpoint, Desktop){
+		@media (min-width:  1440px) {
+			@content;
+		}
+	}
+
+	@if index($breakpoint, Full){
+		@media (min-width:  1600px) {
+			@content;
+		}
+	}
+
+	@if index($breakpoint, HD){
+		@media (min-width:  1920px) {
+			@content;
+		}
+	}
+}
